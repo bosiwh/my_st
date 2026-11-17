@@ -21,8 +21,8 @@
     "moonshot_model": "kimi-latest",
     "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
     "cometapi_model": "gpt-4o",
-    "custom_model": "[金桔柠檬]gemini-4-argon",
-    "custom_url": "https://juziqishui.net/v1",
+    "custom_model": "[0.03/次][按次agy1] 抗截断-gemini-3.8-flash",
+    "custom_url": "https://www.api16z.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "- presence_penalty\n- frequency_penalty\n- top_p\n- top_k\n- temperature",
     "custom_include_headers": "",
@@ -984,7 +984,7 @@
         {
             "identifier": "819b844e-a95d-49ee-b895-3b46e07e72fb",
             "name": "🔸女性用户",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1114,7 +1114,7 @@
         {
             "identifier": "e53de44b-48c8-40a0-a88d-f22ab5c37937",
             "name": "🤝骨科背德",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1127,7 +1127,7 @@
         {
             "identifier": "016916a9-05b7-452c-bebb-ed6172a506e6",
             "name": "🤝双强联合",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1166,7 +1166,7 @@
         {
             "identifier": "e8e81427-c5b9-473f-9dde-2dd91a105443",
             "name": "🤝恨海情天",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1179,7 +1179,7 @@
         {
             "identifier": "b327a75a-d1a5-4ca5-8e6d-bc8d70042c98",
             "name": "🤝破镜重圆",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1205,7 +1205,7 @@
         {
             "identifier": "08f11e85-534f-417f-a331-12b07b045a92",
             "name": "🤝肉欲床伴",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1257,7 +1257,7 @@
         {
             "identifier": "85c70028-efe8-446e-af77-0c66f10a30e3",
             "name": "⬆️拉扯酸涩",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1283,7 +1283,7 @@
         {
             "identifier": "4141700a-03b9-43e3-8770-cd0450a5d3a8",
             "name": "⬆️爱而不得",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1365,7 +1365,7 @@
         {
             "identifier": "14b5942d-2209-463a-9ae6-5b4aff05836c",
             "name": "💖常规难度",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1378,7 +1378,7 @@
         {
             "identifier": "a8cba2b5-b3fc-4d76-a500-77e73256c92d",
             "name": "💖地狱难度",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1430,7 +1430,7 @@
         {
             "identifier": "cb9cd8bd-9e57-4239-9d72-c4ddcd136786",
             "name": "🐶开朗金毛",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1499,7 +1499,7 @@
         {
             "identifier": "eb59603d-8284-48e5-ac7e-a24624b77d7a",
             "name": "🐶笨笨二哈",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1564,7 +1564,7 @@
         {
             "identifier": "0d57b50d-47dc-4cb6-b2fa-6a515c305554",
             "name": "🐶治愈耶耶",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1607,7 +1607,7 @@
         {
             "identifier": "1072e3f0-83e0-4fba-bd9c-8f68c645c84d",
             "name": "🐱黏人布偶",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1659,7 +1659,7 @@
         {
             "identifier": "a51208e2-cced-484d-978c-0620fd4081dc",
             "name": "🐱野性狸花",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1672,7 +1672,7 @@
         {
             "identifier": "e9c6c20a-1c12-4c83-831a-aeadb0dd4f9e",
             "name": "🐱高冷蓝猫",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1728,7 +1728,7 @@
         {
             "identifier": "44766378-84ef-4081-a9f6-0cf458dc84b1",
             "name": "🐱神秘黑猫",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1754,7 +1754,7 @@
         {
             "identifier": "c4358ebe-7d6b-4152-b440-db2b2ad4fcd1",
             "name": "🌷年上的TA",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1780,7 +1780,7 @@
         {
             "identifier": "f59c9d0c-bc0b-492d-b696-8799e9a095a4",
             "name": "🌷淡人的TA",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1793,7 +1793,7 @@
         {
             "identifier": "f499fd4a-3164-4745-9bc2-da718c85a0bb",
             "name": "🌷冰山的TA",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1832,7 +1832,7 @@
         {
             "identifier": "ca44b6fa-d1d6-4096-9884-cc247f9312c0",
             "name": "🌷狐狸的TA",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1845,7 +1845,7 @@
         {
             "identifier": "2924bc9f-f4d9-4b33-959e-8cee459051f3",
             "name": "🌷重力的TA",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1858,7 +1858,7 @@
         {
             "identifier": "3ec40fcd-3e02-4ef0-b832-62f4c1dc8d29",
             "name": "🌷傲娇的TA",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1949,7 +1949,7 @@
         {
             "identifier": "3edbc17f-12df-4a83-b5b1-96f6657496b2",
             "name": "💎聪明的你",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1962,7 +1962,7 @@
         {
             "identifier": "07c65b43-350d-4896-be2d-803c3a7ab75e",
             "name": "💎敏感的你",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2040,7 +2040,7 @@
         {
             "identifier": "3fbd74a1-ab1a-4295-a1db-ebf647ce8388",
             "name": "💎傲娇的你",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2057,7 +2057,7 @@
         {
             "identifier": "4b0b22b2-57e3-4394-ad48-8157ed04ed0e",
             "name": "💎温柔的你",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2070,7 +2070,7 @@
         {
             "identifier": "d7218a2f-5f7a-49e3-84a6-919be98756d2",
             "name": "💎钓系的你",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2161,7 +2161,7 @@
         {
             "identifier": "57a0ed6f-7ef1-404d-a54d-4d5a970f30cc",
             "name": "🔭嬷嬷user",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2187,7 +2187,7 @@
         {
             "identifier": "ff9d4102-5586-4434-b7f4-9364631e04b7",
             "name": "💐反差的嬷",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2200,7 +2200,7 @@
         {
             "identifier": "f8b89876-20b1-4893-83f4-b4e2394d595b",
             "name": "💐怜爱的嬷",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2213,7 +2213,7 @@
         {
             "identifier": "a0f51be5-9bc2-404f-9931-6f3f173d8330",
             "name": "💐依恋的嬷",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2226,7 +2226,7 @@
         {
             "identifier": "34a887aa-8e62-4e75-b712-0583c8071415",
             "name": "💐笨拙的嬷",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2239,7 +2239,7 @@
         {
             "identifier": "8ec119d2-8242-4261-96e5-22c86a798921",
             "name": "💐下位的嬷",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2291,7 +2291,7 @@
         {
             "identifier": "c17a90de-ee9a-4fbf-ae8d-c8d70c9e8476",
             "name": "👻人外user",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2343,7 +2343,7 @@
         {
             "identifier": "7aaeeb79-9c34-4534-8ecf-e10e34d15a3b",
             "name": "😈真变猫了",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2408,7 +2408,7 @@
         {
             "identifier": "ff957435-b0e5-4882-b798-f8ae413b3b3c",
             "name": "😈真变魅魔了",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2555,7 +2555,7 @@
         {
             "identifier": "1cd4f951-330b-45c2-80d0-dc93ae6caf68",
             "name": "🎵好极了|生活喜剧",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2568,7 +2568,7 @@
         {
             "identifier": "22980bba-681b-4ecd-9b8c-0eae6a296369",
             "name": "🎵橘子糖|青春校园",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3091,7 +3091,7 @@
         {
             "identifier": "prompt_1789982100631_zwbfs9a",
             "name": "🎬随机结尾",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3104,7 +3104,7 @@
         {
             "identifier": "prompt_1789982100631_b2vuqik",
             "name": "🎬对话结尾",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3225,7 +3225,7 @@
         {
             "identifier": "1d3e6188-18e6-4af8-a295-d3eb6c036944",
             "name": "❤️‍🔥英抓NSFW",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3238,7 +3238,7 @@
         {
             "identifier": "d92f2c14-1494-4446-b6bd-19d780fc13bb",
             "name": "❤️‍🔥官能NSFW",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3277,7 +3277,7 @@
         {
             "identifier": "ae83421f-1da5-4ca3-8ba8-6bdb0dab0dde",
             "name": "💘极致温柔前置",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3303,7 +3303,7 @@
         {
             "identifier": "0683a492-a65a-4cc0-8647-1af6fecf6088",
             "name": "💘粗暴性爱前置",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3342,7 +3342,7 @@
         {
             "identifier": "f6bc71da-1bcf-4c66-b789-c5156998ad8b",
             "name": "🧾术语词库",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3381,7 +3381,7 @@
         {
             "identifier": "5b85b8f2-63c9-448e-920c-fc55388e0d91",
             "name": "🧾花市词库",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3472,7 +3472,7 @@
         {
             "identifier": "baa29b42-8dba-40ed-a3a8-5875d4bf9d9d",
             "name": "💥人外模式",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3511,7 +3511,7 @@
         {
             "identifier": "0a1ad2f0-9b00-4ce0-8ef1-2d5114508f9b",
             "name": "🥵Kink·体型",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3537,7 +3537,7 @@
         {
             "identifier": "6a0d6c8a-cb27-425c-8577-0c98973c35ad",
             "name": "🥵Kink·公共",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3563,7 +3563,7 @@
         {
             "identifier": "f2551516-f3f0-42a2-a157-8ced338fb9ad",
             "name": "🥵Kink·睡奸",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3589,7 +3589,7 @@
         {
             "identifier": "4638432d-148c-49ee-a3a4-e8b6eb2d44cd",
             "name": "🥵Kink·骑脸",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3615,7 +3615,7 @@
         {
             "identifier": "6e088ee9-a779-4ea5-8cfc-4eaab1863715",
             "name": "🥵Kink·窥淫",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3628,7 +3628,7 @@
         {
             "identifier": "d39e489e-23e4-464a-90b4-b16bf6531775",
             "name": "🥵Kink·扮演",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3753,7 +3753,7 @@
         {
             "identifier": "ce4ba1c0-9a35-4aac-8f86-08812043da9a",
             "name": "✨丰富姿势",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3792,7 +3792,7 @@
         {
             "identifier": "653a76f4-acad-478c-818c-d92579572b85",
             "name": "✨丰富高潮",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3844,7 +3844,7 @@
         {
             "identifier": "e4aae6d7-29c4-443c-a528-96fc576e5cad",
             "name": "💓涩个不停",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3987,7 +3987,7 @@
         {
             "identifier": "098af4e4-5021-4c23-b013-b4646684994b",
             "name": "❖涩涩一键开关❖",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 3,
             "injection_order": 500,
@@ -4552,7 +4552,7 @@
         {
             "identifier": "896fa14f-0278-499b-b7d1-a95205c522d6",
             "name": "🕹️MVU变量",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -4604,7 +4604,7 @@
         {
             "identifier": "e46a51cc-a727-471d-850d-9bf5b62f7d70",
             "name": "✧─头部装饰─✧",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -4630,7 +4630,7 @@
         {
             "identifier": "1bdc69e0-0d30-45f9-a65a-3f525f3e1970",
             "name": "⏰现代文字标题",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -4669,7 +4669,7 @@
         {
             "identifier": "eadeb4e3-e4de-4330-8c47-e8f6aaef506e",
             "name": "⏰唱片文字标题",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -4734,7 +4734,7 @@
         {
             "identifier": "180d58c9-4764-4579-9fb4-74159eeb51c0",
             "name": "🍨文字美化组件",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -4799,7 +4799,7 @@
         {
             "identifier": "82e486e2-2bee-4ff3-878c-634341993593",
             "name": "📱偷看ta的手机",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -4838,7 +4838,7 @@
         {
             "identifier": "496d7b71-f1aa-4512-b0ea-1ba5e76476b2",
             "name": "📟有求必应状态",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -4864,7 +4864,7 @@
         {
             "identifier": "2e29fa60-4c20-4284-a68d-7858d82d21c6",
             "name": "📟底部状态提醒",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -5085,7 +5085,7 @@
         {
             "identifier": "301e2a5a-81bf-4521-9690-9bdf3520a3bf",
             "name": "❖选项一键开关❖",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -5254,7 +5254,7 @@
         {
             "identifier": "9135df9c-fcc3-416a-9fe8-41a7b7cb9f85",
             "name": "🐈‍⬛诡秘之主",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -5293,7 +5293,7 @@
         {
             "identifier": "d3c50b3e-579e-4ad2-aa82-a2d6235fdd69",
             "name": "🌊海底小纵队",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -5449,7 +5449,7 @@
         {
             "identifier": "4fab5b5f-cc40-4332-962c-168c7253b91e",
             "name": "❖论坛一键开关❖",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 0,
             "injection_order": 999,
@@ -6580,7 +6580,7 @@
                 },
                 {
                     "identifier": "100491b0-9190-4ec2-8392-4def86bc81de",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "12ce403b-7b74-4d9c-9f9a-0c77acb5df15",
@@ -7832,19 +7832,19 @@
                 },
                 {
                     "identifier": "01f35536-6216-4e93-b76f-56f508b88b41",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e46a51cc-a727-471d-850d-9bf5b62f7d70",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b62ac0d6-2182-4249-8570-c5f571e1a10a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "1bdc69e0-0d30-45f9-a65a-3f525f3e1970",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "7b3b7c7a-384d-4644-92b8-7797d7c153c2",
@@ -7892,11 +7892,11 @@
                 },
                 {
                     "identifier": "ff9b6991-b3ba-4b1f-8270-15be083a490c",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "82e486e2-2bee-4ff3-878c-634341993593",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "544b9cf1-9e2f-4732-b5fd-238a2aaf687e",
@@ -7904,11 +7904,11 @@
                 },
                 {
                     "identifier": "539ec477-00fb-47ba-84a0-e2740b5412ee",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "496d7b71-f1aa-4512-b0ea-1ba5e76476b2",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "de8f999b-c310-45ae-8ad4-177229086ef9",
@@ -7916,27 +7916,27 @@
                 },
                 {
                     "identifier": "2e29fa60-4c20-4284-a68d-7858d82d21c6",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "55875f98-52cb-46c7-9419-48987633e4d1",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "179b7434-a4f6-4c3f-8873-4cecc8d4ac62",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "bb507d1e-b441-4592-9bab-db67272953cf",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9f7e59ee-d8e0-4c36-b2cc-47cebd061e08",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "c5dea8c4-3a38-41e0-bf18-c659b9a49254",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "5100056f-314e-463a-92fc-3ef0472ef0ea",
@@ -7944,7 +7944,7 @@
                 },
                 {
                     "identifier": "9f8e2603-42e2-4046-8b2a-b09fb8db1a74",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "2634f84a-7bf1-4df2-9543-dfdb3c9ee264",
@@ -7964,19 +7964,19 @@
                 },
                 {
                     "identifier": "78cce7a2-4694-45de-8f5c-e521b3d2bb4a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "fc3fb928-213c-4b26-8e00-abc292ef1806",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "d1822363-b316-4a3a-a73c-7b2b0e7d036a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "7bdc7311-e3f2-47d2-9886-c3002bbc4c09",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "eaff991b-12b7-4ca7-bb54-1665b8770d5b",
@@ -7988,15 +7988,15 @@
                 },
                 {
                     "identifier": "5da1be20-8140-476e-8ae7-db11a09c739c",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "1671620c-6e31-4a9e-ad55-302082490da1",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "8f8e8aef-4c53-493b-b596-709224ee8fdd",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "81abd264-7464-4c21-a59d-987ef1473795",
@@ -8004,11 +8004,11 @@
                 },
                 {
                     "identifier": "77dea3ad-63e2-4c9d-814b-1464b330a963",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "589ad77a-021b-4aa3-b528-e8795505942a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "eb213f6e-87c2-4166-9843-18a2ad5d8f88",
@@ -10374,19 +10374,19 @@
             {
                 "id": "391c563a-2146-4b5d-b5a9-33990f6b5db6",
                 "scriptName": "日月西美化-文字剧场|默认版",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/<ccd>\\s+(?:<details>[\\s\\S]*?<summary>[\\s\\S]*?</summary>\\s*)?([\\s\\S]+?)(?:</details>\\s*)?</ccd>/gi",
-                "replaceString": "```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>日月西美化 - 文字剧场 | 默认版 @电波系</title>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n<style>\n    :root {\n        --bg-base: #f6ece1;\n        --orb-1: rgba(218, 165, 32, 0.22);\n        --orb-2: rgba(216, 92, 59, 0.18);\n        --orb-3: rgba(255, 255, 255, 0.68);\n        \n        --glass-border: rgba(218, 165, 32, 0.34);\n        --glass-shadow: 0 4px 6px rgba(92, 54, 32, 0.1);\n        \n        --text-main: #4a3424;\n        --text-muted: #745845;\n        --text-subtle: #b38b6d;\n        \n        --glass-element-bg: rgba(255, 255, 255, 0.52);\n        --glass-element-border: rgba(218, 165, 32, 0.24);\n        \n        --hl-1: #d85c3b;\n        --hl-2: #b57447;\n        --hl-3: #9f7f63;\n\n        --top-btn-bg: rgba(255, 255, 255, 0.72);\n        --top-btn-border: rgba(218, 165, 32, 0.28);\n        --top-btn-text: #745845;\n        --top-btn-shadow: 0 10px 24px rgba(92, 54, 32, 0.18);\n\n        --bottom-bar-line: rgba(218, 165, 32, 0.22);\n        --pill-btn-bg: rgba(255, 255, 255, 0.56);\n        --pill-btn-border: rgba(218, 165, 32, 0.3);\n        --pill-btn-text: #745845;\n        --pill-btn-hover-bg: rgba(255, 255, 255, 0.85);\n        --pill-btn-shadow: 0 2px 8px rgba(92, 54, 32, 0.08);\n    }\n\n    [data-theme=\"dark\"] {\n        --bg-base: #111821;\n        --orb-1: rgba(143, 182, 217, 0.2);\n        --orb-2: rgba(130, 149, 168, 0.15);\n        --orb-3: rgba(24, 35, 48, 0.85);\n        \n        --glass-border: rgba(100, 120, 140, 0.34);\n        --glass-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);\n        \n        --text-main: #e2e8f0;\n        --text-muted: #a7b7c7;\n        --text-subtle: #8295a8;\n        \n        --glass-element-bg: rgba(255, 255, 255, 0.045);\n        --glass-element-border: rgba(143, 182, 217, 0.2);\n        \n        --hl-1: #8fb6d9;\n        --hl-2: #a4c0d8;\n        --hl-3: #b88a9d;\n\n        --top-btn-bg: rgba(188, 207, 235, 0.12);\n        --top-btn-border: rgba(143, 182, 217, 0.24);\n        --top-btn-text: #bfd4f6;\n        --top-btn-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);\n\n        --bottom-bar-line: rgba(143, 182, 217, 0.18);\n        --pill-btn-bg: rgba(255, 255, 255, 0.05);\n        --pill-btn-border: rgba(143, 182, 217, 0.22);\n        --pill-btn-text: #a7b7c7;\n        --pill-btn-hover-bg: rgba(143, 182, 217, 0.14);\n        --pill-btn-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);\n    }\n\n    body {\n        display: flex;\n        justify-content: center;\n        align-items: flex-start;\n        margin: 0;\n        padding: 20px 10px;\n        box-sizing: border-box; \n        font-family: -apple-system, \"PingFang SC\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        overflow-x: hidden;\n    }\n\n    .window {\n        width: 650px;\n        max-width: 100%; \n        background-color: var(--bg-base); \n        border: 1px solid var(--glass-border);\n        box-shadow: var(--glass-shadow);\n        border-radius: 16px;\n        overflow: hidden;\n        display: flex;\n        flex-direction: column; \n        color: var(--text-main); \n        transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;\n        position: relative; \n        z-index: 1;\n    }\n\n    .bg-orbs {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        z-index: 0;\n        overflow: hidden;\n        pointer-events: none;\n    }\n\n    .orb {\n        position: absolute;\n        border-radius: 50%;\n        filter: blur(60px); \n        transition: background-color 0.8s ease;\n        animation: float 20s infinite ease-in-out alternate;\n    }\n    .orb:nth-child(1) { width: 350px; height: 350px; top: -15%; left: -15%; background: var(--orb-1); animation-delay: 0s; }\n    .orb:nth-child(2) { width: 250px; height: 250px; bottom: -10%; right: -10%; background: var(--orb-2); animation-delay: -5s; }\n    .orb:nth-child(3) { width: 450px; height: 450px; top: 25%; left: 15%; background: var(--orb-3); animation-delay: -10s; filter: blur(80px); opacity: 0.7;}\n\n    @keyframes float {\n        0% { transform: translate(0, 0) scale(1); }\n        50% { transform: translate(5%, 5%) scale(1.05); }\n        100% { transform: translate(-5%, 10%) scale(0.95); }\n    }\n\n    .title-bar, .content, .bottom-bar {\n        position: relative;\n        z-index: 1;\n    }\n\n    .title-bar {\n        display: flex;\n        align-items: center;\n        padding: 14px 20px; \n        border-bottom: 1px solid var(--glass-border);\n        flex-shrink: 0;\n        background: transparent; \n    }\n\n    .toolbar-title { \n        color: var(--text-subtle);\n        font-size: 12px;\n        font-weight: 500; \n        letter-spacing: 1px;\n        flex: 1;\n        display: flex;\n        align-items: center;\n        gap: 8px;\n    }\n    .toolbar-title i { font-size: 10px; opacity: 0.7;}\n\n    .theme-controls {\n        display: flex;\n        justify-content: flex-end;\n        gap: 8px;\n    }\n    .theme-btn {\n        background: transparent;\n        border: none;\n        color: var(--text-subtle);\n        width: 28px;\n        height: 28px;\n        border-radius: 8px;\n        cursor: pointer;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        transition: all 0.3s ease;\n        outline: none;\n    }\n    .theme-btn:hover { \n        color: var(--text-main); \n        background: var(--glass-element-bg);\n    }\n    .theme-btn.active { \n        color: var(--text-main); \n        background: var(--glass-element-bg);\n        border: 1px solid var(--glass-border);\n        box-shadow: 0 2px 8px rgba(0,0,0,0.05);\n    }\n\n    .content {\n        padding: 20px 45px 10px;\n        font-size: 15px;\n        line-height: 1.8;\n        letter-spacing: 0.5px;\n        font-weight: 400;\n    }\n\n    .content strong { font-weight: 600; color: var(--text-main); } \n    .content s { text-decoration: line-through; color: var(--text-subtle); }\n    .content em { font-style: italic; color: var(--text-muted); }\n    .content .highlight { font-weight: 500; }\n\n    .content code {\n        background: var(--glass-element-bg);\n        color: var(--text-muted);\n        padding: 3px 8px;\n        border-radius: 6px;\n        font-family: \"SF Mono\", Menlo, Monaco, Consolas, monospace;\n        font-size: 0.85em;\n        border: 1px solid var(--glass-border);\n    }\n\n    .content .quote-center, .content .highlight-block {\n        text-align: center;\n        background: var(--glass-element-bg);\n        padding: 18px 24px;\n        margin: 20px 0;\n        border-radius: 12px;\n        color: var(--text-muted); \n        border: 1px solid var(--glass-border); \n        box-shadow: inset 0 0 10px rgba(255,255,255,0.05);\n    }\n\n    .content .highlight-block {\n        text-align: justify;\n        border-left: 3px solid var(--text-subtle);\n    }\n\n    .content h1, .content h2, .content h3, .content h4 {\n        margin: 24px 0 12px 0;\n        padding-bottom: 8px;\n        line-height: 1.5;\n        font-weight: 600;\n        color: var(--text-main);\n    }\n    .content h1 { font-size: 1.3em; text-align: center;} \n    .content h2 { font-size: 1.15em; border-bottom: 1px solid var(--glass-border); } \n    .content h3 { font-size: 1.05em; }\n    .content h4 { font-size: 1em; color: var(--text-muted); }\n\n    .content ul { list-style: none; padding-left: 10px; margin: 15px 0; }\n    .content li { position: relative; padding-left: 18px; margin-bottom: 8px; color: var(--text-muted);}\n    .content li::before {\n        content: '';\n        position: absolute;\n        left: 0;\n        top: 11px;\n        width: 4px;\n        height: 4px;\n        border-radius: 50%;\n        background-color: var(--text-subtle);\n        transition: background-color 0.3s ease;\n    }\n\n    .content table {\n        width: 100%;\n        border-collapse: separate;\n        border-spacing: 0;\n        margin: 24px 0; \n        font-size: 0.9em;\n        border-radius: 8px;\n        overflow: hidden;\n        border: 1px solid var(--glass-border);\n    }\n    .content th, .content td {\n        padding: 12px 16px;\n        text-align: left; \n        border-bottom: 1px solid var(--glass-border);\n        color: var(--text-muted);\n    }\n    .content th { font-weight: 600; color: var(--text-main); background: var(--glass-element-bg); }\n    .content tr:last-child td { border-bottom: none; }\n\n    .content hr {\n        border: none;\n        border-top: 1px solid var(--glass-border);\n        margin: 35px 0;\n    }\n\n    .content .empty-line { height: 20px; }\n\n    .bottom-bar {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        padding: 4px 20px 18px;\n        margin-top: 0;\n    }\n\n    .to-top-btn {\n        background: var(--pill-btn-bg);\n        border: 1px solid var(--pill-btn-border);\n        color: var(--pill-btn-text);\n        padding: 6px 18px;\n        border-radius: 20px;\n        font-size: 12px;\n        font-weight: 500;\n        cursor: pointer;\n        display: inline-flex;\n        align-items: center;\n        gap: 7px;\n        backdrop-filter: blur(12px);\n        -webkit-backdrop-filter: blur(12px);\n        box-shadow: var(--pill-btn-shadow);\n        transition: all 0.25s ease;\n        outline: none;\n    }\n\n    .to-top-btn:hover {\n        background: var(--pill-btn-hover-bg);\n        color: var(--text-main);\n        transform: translateY(-1px);\n        border-color: var(--hl-1);\n    }\n\n    .to-top-btn:active {\n        transform: translateY(1px);\n    }\n\n    .back-to-top {\n        position: fixed;\n        right: 24px;\n        bottom: 28px;\n        width: 44px;\n        height: 44px;\n        border: 1px solid var(--top-btn-border);\n        border-radius: 14px;\n        background: var(--top-btn-bg);\n        color: var(--top-btn-text);\n        box-shadow: var(--top-btn-shadow);\n        backdrop-filter: blur(14px);\n        -webkit-backdrop-filter: blur(14px);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        cursor: pointer;\n        opacity: 0;\n        visibility: hidden;\n        transform: translateY(12px);\n        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, color 0.3s ease, background 0.3s ease;\n        z-index: 9999;\n        pointer-events: auto;\n    }\n\n    .back-to-top.show {\n        opacity: 1;\n        visibility: visible;\n        transform: translateY(0);\n    }\n\n    .back-to-top:hover {\n        transform: translateY(-2px);\n        color: var(--text-main);\n        background: var(--glass-element-bg);\n    }\n\n    .back-to-top:active {\n        transform: translateY(0);\n    }\n\n    @media (max-width: 500px) {\n        .content { padding: 15px 22px 8px; font-size: 14px; }\n        .bottom-bar { padding: 2px 16px 14px; }\n        .window { border-radius: 12px; }\n        .back-to-top {\n            right: 16px;\n            bottom: 20px;\n            width: 40px;\n            height: 40px;\n            border-radius: 12px;\n        }\n    }\n</style>\n</head>\n<body>\n\n<div class=\"window\" id=\"ryx-card\">\n    <div class=\"bg-orbs\">\n        <div class=\"orb\"></div>\n        <div class=\"orb\"></div>\n        <div class=\"orb\"></div>\n    </div>\n\n    <div class=\"title-bar\">\n        <span class=\"toolbar-title\" id=\"current-time\">\n            <i class=\"fa-solid fa-sun\"></i> Amaterasu\n        </span>\n        <div class=\"theme-controls\">\n            <button class=\"theme-btn\" id=\"btn-auto\" title=\"时间自动切换 (晚6-早6)\"><i class=\"fa-solid fa-star-of-david\"></i></button>\n            <button class=\"theme-btn\" id=\"btn-light\" title=\"日间模式\"><i class=\"fa-solid fa-sun\"></i></button>\n            <button class=\"theme-btn\" id=\"btn-dark\" title=\"夜间模式\"><i class=\"fa-solid fa-moon\"></i></button>\n        </div>\n    </div>\n    \n    <div id=\"raw-data\" style=\"display:none;\">\n<start>\n$1\n</end>\n    </div>\n\n    <div class=\"content\" id=\"animated-content\"></div>\n\n    <div class=\"bottom-bar\">\n        <button class=\"to-top-btn\" id=\"bottom-to-top\" type=\"button\" aria-label=\"回到剧场顶部\">\n            <i class=\"fa-solid fa-arrow-up\"></i>\n            <span>回到顶部</span>\n        </button>\n    </div>\n</div>\n\n<button class=\"back-to-top\" id=\"back-to-top\" type=\"button\" aria-label=\"回到顶部\" title=\"回到顶部\">\n    <i class=\"fa-solid fa-chevron-up\"></i>\n</button>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    const cardContainer = document.getElementById('ryx-card');\n    const themeAutoBtn = document.getElementById('btn-auto');\n    const themeLightBtn = document.getElementById('btn-light');\n    const themeDarkBtn = document.getElementById('btn-dark');\n    const currentTimeLabel = document.getElementById('current-time');\n    const backToTopBtn = document.getElementById('back-to-top');\n    const bottomToTopBtn = document.getElementById('bottom-to-top');\n    let activeScrollTarget = window;\n\n    function updateTopThemeLabel(resolvedTheme) {\n        if (!currentTimeLabel) return;\n        if (resolvedTheme === 'dark') {\n            currentTimeLabel.innerHTML = '<i class=\"fa-solid fa-moon\"></i> Tsukuyomi';\n        } else {\n            currentTimeLabel.innerHTML = '<i class=\"fa-solid fa-sun\"></i> Amaterasu';\n        }\n    }\n    \n    function getUTC8Hour() {\n        const d = new Date();\n        const utc = d.getTime() + (d.getTimezoneOffset() * 60000);\n        const utc8 = new Date(utc + (3600000 * 8));\n        return utc8.getHours();\n    }\n\n    function isNightTimeInUTC8() {\n        const hour = getUTC8Hour();\n        return hour >= 18 || hour < 6;\n    }\n    \n    function setTheme(theme) {\n        let resolvedTheme = 'light';\n        if (theme === 'auto') {\n            const isNight = isNightTimeInUTC8();\n            resolvedTheme = isNight ? 'dark' : 'light';\n            document.documentElement.setAttribute('data-theme', resolvedTheme);\n        } else {\n            resolvedTheme = theme;\n            document.documentElement.setAttribute('data-theme', theme);\n        }\n        try {\n            localStorage.setItem('yuedu-theme', theme);\n        } catch(e) {}\n        updateTopThemeLabel(resolvedTheme);\n        \n        [themeAutoBtn, themeLightBtn, themeDarkBtn].forEach(btn => {\n            if (btn) btn.classList.remove('active');\n        });\n        if (theme === 'auto' && themeAutoBtn) themeAutoBtn.classList.add('active');\n        if (theme === 'light' && themeLightBtn) themeLightBtn.classList.add('active');\n        if (theme === 'dark' && themeDarkBtn) themeDarkBtn.classList.add('active');\n    }\n\n    setInterval(() => {\n        let stored = 'auto';\n        try { stored = localStorage.getItem('yuedu-theme') || 'auto'; } catch(e) {}\n        if (stored === 'auto') {\n            const isNight = isNightTimeInUTC8();\n            const currentTheme = document.documentElement.getAttribute('data-theme');\n            const targetTheme = isNight ? 'dark' : 'light';\n            if (currentTheme !== targetTheme) {\n                document.documentElement.setAttribute('data-theme', targetTheme);\n                updateTopThemeLabel(targetTheme);\n            }\n        }\n    }, 60000); \n\n    if (themeAutoBtn) themeAutoBtn.addEventListener('click', () => setTheme('auto'));\n    if (themeLightBtn) themeLightBtn.addEventListener('click', () => setTheme('light'));\n    if (themeDarkBtn) themeDarkBtn.addEventListener('click', () => setTheme('dark'));\n\n    let savedTheme = 'auto';\n    try { savedTheme = localStorage.getItem('yuedu-theme') || 'auto'; } catch(e) {}\n    setTheme(savedTheme);\n\n    function findScrollParent(element) {\n        let parent = element ? element.parentElement : null;\n        while (parent) {\n            const style = window.getComputedStyle(parent);\n            const overflowY = style.overflowY;\n            if ((overflowY === 'auto' || overflowY === 'scroll') && parent.scrollHeight > parent.clientHeight + 20) {\n                return parent;\n            }\n            parent = parent.parentElement;\n        }\n        return window;\n    }\n\n    function getScrollMetrics(target) {\n        if (target && target !== window) {\n            return {\n                top: target.scrollTop,\n                max: target.scrollHeight - target.clientHeight\n            };\n        }\n        const doc = document.scrollingElement || document.documentElement;\n        return {\n            top: window.pageYOffset || doc.scrollTop || 0,\n            max: doc.scrollHeight - window.innerHeight\n        };\n    }\n\n    function executeSmoothScrollTop() {\n        if (cardContainer && typeof cardContainer.scrollIntoView === 'function') {\n            cardContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });\n            return;\n        }\n        if (activeScrollTarget && activeScrollTarget !== window) {\n            activeScrollTarget.scrollTo({ top: 0, behavior: 'smooth' });\n            return;\n        }\n        window.scrollTo({ top: 0, behavior: 'smooth' });\n    }\n\n    function toggleBackToTopButton() {\n        if (!backToTopBtn) return;\n        const { top, max } = getScrollMetrics(activeScrollTarget);\n        backToTopBtn.classList.toggle('show', max > 120 && top > 80);\n    }\n\n    if (backToTopBtn) {\n        backToTopBtn.addEventListener('click', executeSmoothScrollTop);\n    }\n\n    if (bottomToTopBtn) {\n        bottomToTopBtn.addEventListener('click', executeSmoothScrollTop);\n    }\n\n    const animatedContent = document.getElementById('animated-content');\n    const highlightVars = ['var(--hl-1)', 'var(--hl-2)', 'var(--hl-3)'];\n\n    const applyCode = (t) => t.replace(/`(.*?)`/g, (m, c) => `<code>${c}</code>`);\n    const applyBold = (t) => t.replace(/\\*\\*(.*?)\\*\\*/g, (m, c) => `<strong>${c}</strong>`);\n    const applyStrikethrough = (t) => t.replace(/\\~\\~(.*?)\\~\\~|<del>(.*?)<\\/del>/g, (m, c1, c2) => `<s>${c1 || c2}</s>`);\n    const applyItalic = (t) => t.replace(/\\*(.*?)\\*/g, (m, c) => `<em>${c}</em>`);\n    const applyHighlight = (t) => t.replace(/(\\[.*?\\]|\\(.*?\\)|\".*?\"|“.*?”)/g, (m) => {\n        const randomColor = highlightVars[Math.floor(Math.random() * highlightVars.length)];\n        return `<span class=\"highlight\" style=\"color: ${randomColor};\">${m}</span>`;\n    });\n\n    function parseInlineMarkdown(text) {\n        return applyHighlight(applyItalic(applyStrikethrough(applyBold(applyCode(text)))));\n    }\n\n    function parseContent(lines) {\n        const htmlChunks = [];\n        let i = 0;\n        \n        const isTableSeparator = (line) => /^\\|(?:\\s*:?-+:?\\s*\\|)+$/.test(line);\n\n        while (i < lines.length) {\n            const trimmedLine = lines[i].trim();\n            \n            if (i + 1 < lines.length && isTableSeparator(lines[i + 1].trim())) {\n                const tableData = { headers: [], alignments: [], rows: [] };\n                tableData.alignments = lines[i + 1].trim().split('|').slice(1, -1).map(s => {\n                    const align = s.trim();\n                    if (align.startsWith(':') && align.endsWith(':')) return 'center';\n                    if (align.endsWith(':')) return 'right';\n                    return 'left';\n                });\n                tableData.headers = lines[i].trim().split('|').slice(1, -1).map(s => s.trim());\n                let rowIndex = i + 2;\n                while (rowIndex < lines.length && lines[rowIndex].trim().startsWith('|')) {\n                    tableData.rows.push(lines[rowIndex].trim().split('|').slice(1, -1).map(s => s.trim()));\n                    rowIndex++;\n                }\n                let tableHTML = '<table><thead><tr>';\n                tableData.headers.forEach((h, idx) => { tableHTML += `<th style=\"text-align: ${tableData.alignments[idx]};\">${parseInlineMarkdown(h)}</th>`; });\n                tableHTML += '</tr></thead><tbody>';\n                tableData.rows.forEach(r => {\n                    tableHTML += '<tr>';\n                    r.forEach((c, idx) => { tableHTML += `<td style=\"text-align: ${tableData.alignments[idx]};\">${parseInlineMarkdown(c)}</td>`; });\n                    tableHTML += '</tr>';\n                });\n                tableHTML += '</tbody></table>';\n                htmlChunks.push(tableHTML);\n                i = rowIndex;\n                \n            } else if (trimmedLine.startsWith('>')) {\n                const quoteGroup = [];\n                let currentIndex = i;\n                while (currentIndex < lines.length && lines[currentIndex].trim().startsWith('>')) {\n                    quoteGroup.push(lines[currentIndex].trim());\n                    currentIndex++;\n                }\n                const nestedLines = quoteGroup.map(line => line.substring(line.indexOf('>') + 1));\n                const innerHtml = parseContent(nestedLines).join('');\n                htmlChunks.push(`<div class=\"quote-center\">${innerHtml}</div>`);\n                i = currentIndex;\n\n            } else if (trimmedLine.startsWith('||')) {\n                const groupedRawInnerLines = [];\n                let currentIndex = i;\n                while (currentIndex < lines.length && lines[currentIndex].trim().startsWith('||')) {\n                    const currentBlockLine = lines[currentIndex].trim();\n                    let rawInnerLine = currentBlockLine.substring(2);\n                    let cleanedInnerLine = rawInnerLine.replace(/\\|\\|/g, '');\n                    groupedRawInnerLines.push(cleanedInnerLine);\n                    currentIndex++;\n                }\n                const parsedInnerHtml = parseContent(groupedRawInnerLines).join('');\n                htmlChunks.push(`<div class=\"highlight-block\">${parsedInnerHtml}</div>`);\n                i = currentIndex;\n\n            } else if (trimmedLine.startsWith('* ')) {\n                const listItems = [];\n                let currentIndex = i;\n                while (currentIndex < lines.length && lines[currentIndex].trim().startsWith('* ')) {\n                    listItems.push(lines[currentIndex].trim().substring(2));\n                    currentIndex++;\n                }\n                htmlChunks.push(`<ul>${listItems.map(item => `<li>${parseInlineMarkdown(item)}</li>`).join('')}</ul>`);\n                i = currentIndex;\n\n            } else if (/^---+\\s*$/.test(trimmedLine)) {\n                htmlChunks.push('<hr>');\n                i++;\n\n            } else {\n                if (trimmedLine === '') {\n                    if (htmlChunks.length === 0 || htmlChunks[htmlChunks.length - 1] !== '<div class=\"empty-line\"></div>') {\n                        htmlChunks.push('<div class=\"empty-line\"></div>');\n                    }\n                } else {\n                    const headingMatch = trimmedLine.match(/^(\\#{1,4})\\s(.*)/);\n                    if (headingMatch) {\n                        const level = headingMatch[1].length;\n                        const content = headingMatch[2];\n                        htmlChunks.push(`<h${level}>${parseInlineMarkdown(content)}</h${level}>`);\n                    } else {\n                        htmlChunks.push(`<div>${parseInlineMarkdown(trimmedLine)}</div>`);\n                    }\n                }\n                i++;\n            }\n        }\n        return htmlChunks;\n    }\n\n    let rawContent = '';\n    const rawDataEl = document.getElementById('raw-data');\n    const rawText = rawDataEl ? rawDataEl.textContent : '';\n    const startEndMatch = rawText.match(/<start>([\\s\\S]*?)<end>/);\n    rawContent = (startEndMatch && startEndMatch[1]) ? startEndMatch[1].trim() : rawText;\n\n    const initialLines = rawContent.split('\\n');\n    const finalHtmlBlocks = parseContent(initialLines);\n\n    if (animatedContent) {\n        animatedContent.innerHTML = finalHtmlBlocks.join('');\n    }\n\n    activeScrollTarget = findScrollParent(animatedContent);\n    activeScrollTarget.addEventListener('scroll', toggleBackToTopButton, { passive: true });\n    window.addEventListener('scroll', toggleBackToTopButton, { passive: true });\n    window.addEventListener('resize', toggleBackToTopButton);\n    requestAnimationFrame(toggleBackToTopButton);\n});\n</script>\n</body>\n</html>\n```",
                 "trimStrings": [],
+                "replaceString": "```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>日月西美化 - 文字剧场 | 默认版 @电波系</title>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n<style>\n    :root {\n        --bg-base: #f6ece1;\n        --orb-1: rgba(218, 165, 32, 0.22);\n        --orb-2: rgba(216, 92, 59, 0.18);\n        --orb-3: rgba(255, 255, 255, 0.68);\n        \n        --glass-border: rgba(218, 165, 32, 0.34);\n        --glass-shadow: 0 4px 6px rgba(92, 54, 32, 0.1);\n        \n        --text-main: #4a3424;\n        --text-muted: #745845;\n        --text-subtle: #b38b6d;\n        \n        --glass-element-bg: rgba(255, 255, 255, 0.52);\n        --glass-element-border: rgba(218, 165, 32, 0.24);\n        \n        --hl-1: #d85c3b;\n        --hl-2: #b57447;\n        --hl-3: #9f7f63;\n\n        --top-btn-bg: rgba(255, 255, 255, 0.72);\n        --top-btn-border: rgba(218, 165, 32, 0.28);\n        --top-btn-text: #745845;\n        --top-btn-shadow: 0 10px 24px rgba(92, 54, 32, 0.18);\n\n        --bottom-bar-line: rgba(218, 165, 32, 0.22);\n        --pill-btn-bg: rgba(255, 255, 255, 0.56);\n        --pill-btn-border: rgba(218, 165, 32, 0.3);\n        --pill-btn-text: #745845;\n        --pill-btn-hover-bg: rgba(255, 255, 255, 0.85);\n        --pill-btn-shadow: 0 2px 8px rgba(92, 54, 32, 0.08);\n    }\n\n    [data-theme=\"dark\"] {\n        --bg-base: #111821;\n        --orb-1: rgba(143, 182, 217, 0.2);\n        --orb-2: rgba(130, 149, 168, 0.15);\n        --orb-3: rgba(24, 35, 48, 0.85);\n        \n        --glass-border: rgba(100, 120, 140, 0.34);\n        --glass-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);\n        \n        --text-main: #e2e8f0;\n        --text-muted: #a7b7c7;\n        --text-subtle: #8295a8;\n        \n        --glass-element-bg: rgba(255, 255, 255, 0.045);\n        --glass-element-border: rgba(143, 182, 217, 0.2);\n        \n        --hl-1: #8fb6d9;\n        --hl-2: #a4c0d8;\n        --hl-3: #b88a9d;\n\n        --top-btn-bg: rgba(188, 207, 235, 0.12);\n        --top-btn-border: rgba(143, 182, 217, 0.24);\n        --top-btn-text: #bfd4f6;\n        --top-btn-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);\n\n        --bottom-bar-line: rgba(143, 182, 217, 0.18);\n        --pill-btn-bg: rgba(255, 255, 255, 0.05);\n        --pill-btn-border: rgba(143, 182, 217, 0.22);\n        --pill-btn-text: #a7b7c7;\n        --pill-btn-hover-bg: rgba(143, 182, 217, 0.14);\n        --pill-btn-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);\n    }\n\n    body {\n        display: flex;\n        justify-content: center;\n        align-items: flex-start;\n        margin: 0;\n        padding: 20px 10px;\n        box-sizing: border-box; \n        font-family: -apple-system, \"PingFang SC\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        overflow-x: hidden;\n    }\n\n    .window {\n        width: 650px;\n        max-width: 100%; \n        background-color: var(--bg-base); \n        border: 1px solid var(--glass-border);\n        box-shadow: var(--glass-shadow);\n        border-radius: 16px;\n        overflow: hidden;\n        display: flex;\n        flex-direction: column; \n        color: var(--text-main); \n        transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;\n        position: relative; \n        z-index: 1;\n    }\n\n    .bg-orbs {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        z-index: 0;\n        overflow: hidden;\n        pointer-events: none;\n    }\n\n    .orb {\n        position: absolute;\n        border-radius: 50%;\n        filter: blur(60px); \n        transition: background-color 0.8s ease;\n        animation: float 20s infinite ease-in-out alternate;\n    }\n    .orb:nth-child(1) { width: 350px; height: 350px; top: -15%; left: -15%; background: var(--orb-1); animation-delay: 0s; }\n    .orb:nth-child(2) { width: 250px; height: 250px; bottom: -10%; right: -10%; background: var(--orb-2); animation-delay: -5s; }\n    .orb:nth-child(3) { width: 450px; height: 450px; top: 25%; left: 15%; background: var(--orb-3); animation-delay: -10s; filter: blur(80px); opacity: 0.7;}\n\n    @keyframes float {\n        0% { transform: translate(0, 0) scale(1); }\n        50% { transform: translate(5%, 5%) scale(1.05); }\n        100% { transform: translate(-5%, 10%) scale(0.95); }\n    }\n\n    .title-bar, .content, .bottom-bar {\n        position: relative;\n        z-index: 1;\n    }\n\n    .title-bar {\n        display: flex;\n        align-items: center;\n        padding: 14px 20px; \n        border-bottom: 1px solid var(--glass-border);\n        flex-shrink: 0;\n        background: transparent; \n    }\n\n    .toolbar-title { \n        color: var(--text-subtle);\n        font-size: 12px;\n        font-weight: 500; \n        letter-spacing: 1px;\n        flex: 1;\n        display: flex;\n        align-items: center;\n        gap: 8px;\n    }\n    .toolbar-title i { font-size: 10px; opacity: 0.7;}\n\n    .theme-controls {\n        display: flex;\n        justify-content: flex-end;\n        gap: 8px;\n    }\n    .theme-btn {\n        background: transparent;\n        border: none;\n        color: var(--text-subtle);\n        width: 28px;\n        height: 28px;\n        border-radius: 8px;\n        cursor: pointer;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        transition: all 0.3s ease;\n        outline: none;\n    }\n    .theme-btn:hover { \n        color: var(--text-main); \n        background: var(--glass-element-bg);\n    }\n    .theme-btn.active { \n        color: var(--text-main); \n        background: var(--glass-element-bg);\n        border: 1px solid var(--glass-border);\n        box-shadow: 0 2px 8px rgba(0,0,0,0.05);\n    }\n\n    .content {\n        padding: 20px 45px 10px;\n        font-size: 15px;\n        line-height: 1.8;\n        letter-spacing: 0.5px;\n        font-weight: 400;\n    }\n\n    .content strong { font-weight: 600; color: var(--text-main); } \n    .content s { text-decoration: line-through; color: var(--text-subtle); }\n    .content em { font-style: italic; color: var(--text-muted); }\n    .content .highlight { font-weight: 500; }\n\n    .content code {\n        background: var(--glass-element-bg);\n        color: var(--text-muted);\n        padding: 3px 8px;\n        border-radius: 6px;\n        font-family: \"SF Mono\", Menlo, Monaco, Consolas, monospace;\n        font-size: 0.85em;\n        border: 1px solid var(--glass-border);\n    }\n\n    .content .quote-center, .content .highlight-block {\n        text-align: center;\n        background: var(--glass-element-bg);\n        padding: 18px 24px;\n        margin: 20px 0;\n        border-radius: 12px;\n        color: var(--text-muted); \n        border: 1px solid var(--glass-border); \n        box-shadow: inset 0 0 10px rgba(255,255,255,0.05);\n    }\n\n    .content .highlight-block {\n        text-align: justify;\n        border-left: 3px solid var(--text-subtle);\n    }\n\n    .content h1, .content h2, .content h3, .content h4 {\n        margin: 24px 0 12px 0;\n        padding-bottom: 8px;\n        line-height: 1.5;\n        font-weight: 600;\n        color: var(--text-main);\n    }\n    .content h1 { font-size: 1.3em; text-align: center;} \n    .content h2 { font-size: 1.15em; border-bottom: 1px solid var(--glass-border); } \n    .content h3 { font-size: 1.05em; }\n    .content h4 { font-size: 1em; color: var(--text-muted); }\n\n    .content ul { list-style: none; padding-left: 10px; margin: 15px 0; }\n    .content li { position: relative; padding-left: 18px; margin-bottom: 8px; color: var(--text-muted);}\n    .content li::before {\n        content: '';\n        position: absolute;\n        left: 0;\n        top: 11px;\n        width: 4px;\n        height: 4px;\n        border-radius: 50%;\n        background-color: var(--text-subtle);\n        transition: background-color 0.3s ease;\n    }\n\n    .content table {\n        width: 100%;\n        border-collapse: separate;\n        border-spacing: 0;\n        margin: 24px 0; \n        font-size: 0.9em;\n        border-radius: 8px;\n        overflow: hidden;\n        border: 1px solid var(--glass-border);\n    }\n    .content th, .content td {\n        padding: 12px 16px;\n        text-align: left; \n        border-bottom: 1px solid var(--glass-border);\n        color: var(--text-muted);\n    }\n    .content th { font-weight: 600; color: var(--text-main); background: var(--glass-element-bg); }\n    .content tr:last-child td { border-bottom: none; }\n\n    .content hr {\n        border: none;\n        border-top: 1px solid var(--glass-border);\n        margin: 35px 0;\n    }\n\n    .content .empty-line { height: 20px; }\n\n    .bottom-bar {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        padding: 4px 20px 18px;\n        margin-top: 0;\n    }\n\n    .to-top-btn {\n        background: var(--pill-btn-bg);\n        border: 1px solid var(--pill-btn-border);\n        color: var(--pill-btn-text);\n        padding: 6px 18px;\n        border-radius: 20px;\n        font-size: 12px;\n        font-weight: 500;\n        cursor: pointer;\n        display: inline-flex;\n        align-items: center;\n        gap: 7px;\n        backdrop-filter: blur(12px);\n        -webkit-backdrop-filter: blur(12px);\n        box-shadow: var(--pill-btn-shadow);\n        transition: all 0.25s ease;\n        outline: none;\n    }\n\n    .to-top-btn:hover {\n        background: var(--pill-btn-hover-bg);\n        color: var(--text-main);\n        transform: translateY(-1px);\n        border-color: var(--hl-1);\n    }\n\n    .to-top-btn:active {\n        transform: translateY(1px);\n    }\n\n    .back-to-top {\n        position: fixed;\n        right: 24px;\n        bottom: 28px;\n        width: 44px;\n        height: 44px;\n        border: 1px solid var(--top-btn-border);\n        border-radius: 14px;\n        background: var(--top-btn-bg);\n        color: var(--top-btn-text);\n        box-shadow: var(--top-btn-shadow);\n        backdrop-filter: blur(14px);\n        -webkit-backdrop-filter: blur(14px);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        cursor: pointer;\n        opacity: 0;\n        visibility: hidden;\n        transform: translateY(12px);\n        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, color 0.3s ease, background 0.3s ease;\n        z-index: 9999;\n        pointer-events: auto;\n    }\n\n    .back-to-top.show {\n        opacity: 1;\n        visibility: visible;\n        transform: translateY(0);\n    }\n\n    .back-to-top:hover {\n        transform: translateY(-2px);\n        color: var(--text-main);\n        background: var(--glass-element-bg);\n    }\n\n    .back-to-top:active {\n        transform: translateY(0);\n    }\n\n    @media (max-width: 500px) {\n        .content { padding: 15px 22px 8px; font-size: 14px; }\n        .bottom-bar { padding: 2px 16px 14px; }\n        .window { border-radius: 12px; }\n        .back-to-top {\n            right: 16px;\n            bottom: 20px;\n            width: 40px;\n            height: 40px;\n            border-radius: 12px;\n        }\n    }\n</style>\n</head>\n<body>\n\n<div class=\"window\" id=\"ryx-card\">\n    <div class=\"bg-orbs\">\n        <div class=\"orb\"></div>\n        <div class=\"orb\"></div>\n        <div class=\"orb\"></div>\n    </div>\n\n    <div class=\"title-bar\">\n        <span class=\"toolbar-title\" id=\"current-time\">\n            <i class=\"fa-solid fa-sun\"></i> Amaterasu\n        </span>\n        <div class=\"theme-controls\">\n            <button class=\"theme-btn\" id=\"btn-auto\" title=\"时间自动切换 (晚6-早6)\"><i class=\"fa-solid fa-star-of-david\"></i></button>\n            <button class=\"theme-btn\" id=\"btn-light\" title=\"日间模式\"><i class=\"fa-solid fa-sun\"></i></button>\n            <button class=\"theme-btn\" id=\"btn-dark\" title=\"夜间模式\"><i class=\"fa-solid fa-moon\"></i></button>\n        </div>\n    </div>\n    \n    <div id=\"raw-data\" style=\"display:none;\">\n<start>\n$1\n</end>\n    </div>\n\n    <div class=\"content\" id=\"animated-content\"></div>\n\n    <div class=\"bottom-bar\">\n        <button class=\"to-top-btn\" id=\"bottom-to-top\" type=\"button\" aria-label=\"回到剧场顶部\">\n            <i class=\"fa-solid fa-arrow-up\"></i>\n            <span>回到顶部</span>\n        </button>\n    </div>\n</div>\n\n<button class=\"back-to-top\" id=\"back-to-top\" type=\"button\" aria-label=\"回到顶部\" title=\"回到顶部\">\n    <i class=\"fa-solid fa-chevron-up\"></i>\n</button>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    const cardContainer = document.getElementById('ryx-card');\n    const themeAutoBtn = document.getElementById('btn-auto');\n    const themeLightBtn = document.getElementById('btn-light');\n    const themeDarkBtn = document.getElementById('btn-dark');\n    const currentTimeLabel = document.getElementById('current-time');\n    const backToTopBtn = document.getElementById('back-to-top');\n    const bottomToTopBtn = document.getElementById('bottom-to-top');\n    let activeScrollTarget = window;\n\n    function updateTopThemeLabel(resolvedTheme) {\n        if (!currentTimeLabel) return;\n        if (resolvedTheme === 'dark') {\n            currentTimeLabel.innerHTML = '<i class=\"fa-solid fa-moon\"></i> Tsukuyomi';\n        } else {\n            currentTimeLabel.innerHTML = '<i class=\"fa-solid fa-sun\"></i> Amaterasu';\n        }\n    }\n    \n    function getUTC8Hour() {\n        const d = new Date();\n        const utc = d.getTime() + (d.getTimezoneOffset() * 60000);\n        const utc8 = new Date(utc + (3600000 * 8));\n        return utc8.getHours();\n    }\n\n    function isNightTimeInUTC8() {\n        const hour = getUTC8Hour();\n        return hour >= 18 || hour < 6;\n    }\n    \n    function setTheme(theme) {\n        let resolvedTheme = 'light';\n        if (theme === 'auto') {\n            const isNight = isNightTimeInUTC8();\n            resolvedTheme = isNight ? 'dark' : 'light';\n            document.documentElement.setAttribute('data-theme', resolvedTheme);\n        } else {\n            resolvedTheme = theme;\n            document.documentElement.setAttribute('data-theme', theme);\n        }\n        try {\n            localStorage.setItem('yuedu-theme', theme);\n        } catch(e) {}\n        updateTopThemeLabel(resolvedTheme);\n        \n        [themeAutoBtn, themeLightBtn, themeDarkBtn].forEach(btn => {\n            if (btn) btn.classList.remove('active');\n        });\n        if (theme === 'auto' && themeAutoBtn) themeAutoBtn.classList.add('active');\n        if (theme === 'light' && themeLightBtn) themeLightBtn.classList.add('active');\n        if (theme === 'dark' && themeDarkBtn) themeDarkBtn.classList.add('active');\n    }\n\n    setInterval(() => {\n        let stored = 'auto';\n        try { stored = localStorage.getItem('yuedu-theme') || 'auto'; } catch(e) {}\n        if (stored === 'auto') {\n            const isNight = isNightTimeInUTC8();\n            const currentTheme = document.documentElement.getAttribute('data-theme');\n            const targetTheme = isNight ? 'dark' : 'light';\n            if (currentTheme !== targetTheme) {\n                document.documentElement.setAttribute('data-theme', targetTheme);\n                updateTopThemeLabel(targetTheme);\n            }\n        }\n    }, 60000); \n\n    if (themeAutoBtn) themeAutoBtn.addEventListener('click', () => setTheme('auto'));\n    if (themeLightBtn) themeLightBtn.addEventListener('click', () => setTheme('light'));\n    if (themeDarkBtn) themeDarkBtn.addEventListener('click', () => setTheme('dark'));\n\n    let savedTheme = 'auto';\n    try { savedTheme = localStorage.getItem('yuedu-theme') || 'auto'; } catch(e) {}\n    setTheme(savedTheme);\n\n    function findScrollParent(element) {\n        let parent = element ? element.parentElement : null;\n        while (parent) {\n            const style = window.getComputedStyle(parent);\n            const overflowY = style.overflowY;\n            if ((overflowY === 'auto' || overflowY === 'scroll') && parent.scrollHeight > parent.clientHeight + 20) {\n                return parent;\n            }\n            parent = parent.parentElement;\n        }\n        return window;\n    }\n\n    function getScrollMetrics(target) {\n        if (target && target !== window) {\n            return {\n                top: target.scrollTop,\n                max: target.scrollHeight - target.clientHeight\n            };\n        }\n        const doc = document.scrollingElement || document.documentElement;\n        return {\n            top: window.pageYOffset || doc.scrollTop || 0,\n            max: doc.scrollHeight - window.innerHeight\n        };\n    }\n\n    function executeSmoothScrollTop() {\n        if (cardContainer && typeof cardContainer.scrollIntoView === 'function') {\n            cardContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });\n            return;\n        }\n        if (activeScrollTarget && activeScrollTarget !== window) {\n            activeScrollTarget.scrollTo({ top: 0, behavior: 'smooth' });\n            return;\n        }\n        window.scrollTo({ top: 0, behavior: 'smooth' });\n    }\n\n    function toggleBackToTopButton() {\n        if (!backToTopBtn) return;\n        const { top, max } = getScrollMetrics(activeScrollTarget);\n        backToTopBtn.classList.toggle('show', max > 120 && top > 80);\n    }\n\n    if (backToTopBtn) {\n        backToTopBtn.addEventListener('click', executeSmoothScrollTop);\n    }\n\n    if (bottomToTopBtn) {\n        bottomToTopBtn.addEventListener('click', executeSmoothScrollTop);\n    }\n\n    const animatedContent = document.getElementById('animated-content');\n    const highlightVars = ['var(--hl-1)', 'var(--hl-2)', 'var(--hl-3)'];\n\n    const applyCode = (t) => t.replace(/`(.*?)`/g, (m, c) => `<code>${c}</code>`);\n    const applyBold = (t) => t.replace(/\\*\\*(.*?)\\*\\*/g, (m, c) => `<strong>${c}</strong>`);\n    const applyStrikethrough = (t) => t.replace(/\\~\\~(.*?)\\~\\~|<del>(.*?)<\\/del>/g, (m, c1, c2) => `<s>${c1 || c2}</s>`);\n    const applyItalic = (t) => t.replace(/\\*(.*?)\\*/g, (m, c) => `<em>${c}</em>`);\n    const applyHighlight = (t) => t.replace(/(\\[.*?\\]|\\(.*?\\)|\".*?\"|“.*?”)/g, (m) => {\n        const randomColor = highlightVars[Math.floor(Math.random() * highlightVars.length)];\n        return `<span class=\"highlight\" style=\"color: ${randomColor};\">${m}</span>`;\n    });\n\n    function parseInlineMarkdown(text) {\n        return applyHighlight(applyItalic(applyStrikethrough(applyBold(applyCode(text)))));\n    }\n\n    function parseContent(lines) {\n        const htmlChunks = [];\n        let i = 0;\n        \n        const isTableSeparator = (line) => /^\\|(?:\\s*:?-+:?\\s*\\|)+$/.test(line);\n\n        while (i < lines.length) {\n            const trimmedLine = lines[i].trim();\n            \n            if (i + 1 < lines.length && isTableSeparator(lines[i + 1].trim())) {\n                const tableData = { headers: [], alignments: [], rows: [] };\n                tableData.alignments = lines[i + 1].trim().split('|').slice(1, -1).map(s => {\n                    const align = s.trim();\n                    if (align.startsWith(':') && align.endsWith(':')) return 'center';\n                    if (align.endsWith(':')) return 'right';\n                    return 'left';\n                });\n                tableData.headers = lines[i].trim().split('|').slice(1, -1).map(s => s.trim());\n                let rowIndex = i + 2;\n                while (rowIndex < lines.length && lines[rowIndex].trim().startsWith('|')) {\n                    tableData.rows.push(lines[rowIndex].trim().split('|').slice(1, -1).map(s => s.trim()));\n                    rowIndex++;\n                }\n                let tableHTML = '<table><thead><tr>';\n                tableData.headers.forEach((h, idx) => { tableHTML += `<th style=\"text-align: ${tableData.alignments[idx]};\">${parseInlineMarkdown(h)}</th>`; });\n                tableHTML += '</tr></thead><tbody>';\n                tableData.rows.forEach(r => {\n                    tableHTML += '<tr>';\n                    r.forEach((c, idx) => { tableHTML += `<td style=\"text-align: ${tableData.alignments[idx]};\">${parseInlineMarkdown(c)}</td>`; });\n                    tableHTML += '</tr>';\n                });\n                tableHTML += '</tbody></table>';\n                htmlChunks.push(tableHTML);\n                i = rowIndex;\n                \n            } else if (trimmedLine.startsWith('>')) {\n                const quoteGroup = [];\n                let currentIndex = i;\n                while (currentIndex < lines.length && lines[currentIndex].trim().startsWith('>')) {\n                    quoteGroup.push(lines[currentIndex].trim());\n                    currentIndex++;\n                }\n                const nestedLines = quoteGroup.map(line => line.substring(line.indexOf('>') + 1));\n                const innerHtml = parseContent(nestedLines).join('');\n                htmlChunks.push(`<div class=\"quote-center\">${innerHtml}</div>`);\n                i = currentIndex;\n\n            } else if (trimmedLine.startsWith('||')) {\n                const groupedRawInnerLines = [];\n                let currentIndex = i;\n                while (currentIndex < lines.length && lines[currentIndex].trim().startsWith('||')) {\n                    const currentBlockLine = lines[currentIndex].trim();\n                    let rawInnerLine = currentBlockLine.substring(2);\n                    let cleanedInnerLine = rawInnerLine.replace(/\\|\\|/g, '');\n                    groupedRawInnerLines.push(cleanedInnerLine);\n                    currentIndex++;\n                }\n                const parsedInnerHtml = parseContent(groupedRawInnerLines).join('');\n                htmlChunks.push(`<div class=\"highlight-block\">${parsedInnerHtml}</div>`);\n                i = currentIndex;\n\n            } else if (trimmedLine.startsWith('* ')) {\n                const listItems = [];\n                let currentIndex = i;\n                while (currentIndex < lines.length && lines[currentIndex].trim().startsWith('* ')) {\n                    listItems.push(lines[currentIndex].trim().substring(2));\n                    currentIndex++;\n                }\n                htmlChunks.push(`<ul>${listItems.map(item => `<li>${parseInlineMarkdown(item)}</li>`).join('')}</ul>`);\n                i = currentIndex;\n\n            } else if (/^---+\\s*$/.test(trimmedLine)) {\n                htmlChunks.push('<hr>');\n                i++;\n\n            } else {\n                if (trimmedLine === '') {\n                    if (htmlChunks.length === 0 || htmlChunks[htmlChunks.length - 1] !== '<div class=\"empty-line\"></div>') {\n                        htmlChunks.push('<div class=\"empty-line\"></div>');\n                    }\n                } else {\n                    const headingMatch = trimmedLine.match(/^(\\#{1,4})\\s(.*)/);\n                    if (headingMatch) {\n                        const level = headingMatch[1].length;\n                        const content = headingMatch[2];\n                        htmlChunks.push(`<h${level}>${parseInlineMarkdown(content)}</h${level}>`);\n                    } else {\n                        htmlChunks.push(`<div>${parseInlineMarkdown(trimmedLine)}</div>`);\n                    }\n                }\n                i++;\n            }\n        }\n        return htmlChunks;\n    }\n\n    let rawContent = '';\n    const rawDataEl = document.getElementById('raw-data');\n    const rawText = rawDataEl ? rawDataEl.textContent : '';\n    const startEndMatch = rawText.match(/<start>([\\s\\S]*?)<end>/);\n    rawContent = (startEndMatch && startEndMatch[1]) ? startEndMatch[1].trim() : rawText;\n\n    const initialLines = rawContent.split('\\n');\n    const finalHtmlBlocks = parseContent(initialLines);\n\n    if (animatedContent) {\n        animatedContent.innerHTML = finalHtmlBlocks.join('');\n    }\n\n    activeScrollTarget = findScrollParent(animatedContent);\n    activeScrollTarget.addEventListener('scroll', toggleBackToTopButton, { passive: true });\n    window.addEventListener('scroll', toggleBackToTopButton, { passive: true });\n    window.addEventListener('resize', toggleBackToTopButton);\n    requestAnimationFrame(toggleBackToTopButton);\n});\n</script>\n</body>\n</html>\n```",
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": 10
+                "maxDepth": 10,
+                "markdownOnly": true,
+                "promptOnly": false
             },
             {
                 "id": "05f2dcdd-49e6-4b0b-b733-0d3068e043ca",
