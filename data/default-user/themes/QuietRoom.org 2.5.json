@@ -12,7 +12,7 @@
     "shadow_color": "rgba(0, 0, 0, 0)",
     "shadow_width": 0,
     "border_color": "rgba(207, 209, 215, 1)",
-    "font_scale": 0.95,
+    "font_scale": 1.01,
     "fast_ui_mode": false,
     "waifuMode": false,
     "avatar_style": 2,
