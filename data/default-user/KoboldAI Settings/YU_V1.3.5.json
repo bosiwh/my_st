@@ -1,0 +1,446 @@
+{
+    "temp": 1.18,
+    "rep_pen": 1,
+    "rep_pen_range": 0,
+    "top_p": 0.95,
+    "min_p": 0,
+    "top_a": 0,
+    "top_k": 0,
+    "typical": 1,
+    "tfs": 1,
+    "rep_pen_slope": 0.9,
+    "sampler_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "mirostat": 0,
+    "mirostat_tau": 5,
+    "mirostat_eta": 0.1,
+    "use_default_badwordsids": false,
+    "grammar": "",
+    "extensions": {
+        "SPreset": {
+            "ChatSquash": {
+                "enabled": false,
+                "separate_chat_history": false,
+                "parse_clewd": true,
+                "role": "assistant",
+                "stop_string": "User:",
+                "user_prefix": "\n\nUser:",
+                "user_suffix": "",
+                "char_prefix": "\n\nAssistant:",
+                "char_suffix": "",
+                "prefix_system": "",
+                "suffix_system": "",
+                "enable_squashed_separator": false,
+                "squashed_separator_regex": false,
+                "squashed_separator_string": "",
+                "squashed_post_script_enable": false,
+                "squashed_post_script": ""
+            },
+            "RegexBinding": {
+                "regexes": []
+            },
+            "MacroNest": false
+        },
+        "regex_scripts": [
+            {
+                "id": "2bbf8c7c-8f65-47ca-a2b5-1ea947921ff7",
+                "scriptName": "小说标题-日间",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\[CHAPTER_HEADER\\]\\s*NUM:\\s*(.+?)\\s*TITLE:\\s*(.+?)\\s*BRIEF:\\s*(.+?)\\s*\\[\\/CHAPTER_HEADER\\]/gs",
+                "trimStrings": [],
+                "replaceString": "<style>@import url(\"https://fontsapi.zeoseven.com/615/main/result.css\");@import url(\"https://fontsapi.zeoseven.com/492/main/result.css\");@import url(\"https://fontsapi.zeoseven.com/383/main/result.css\");</style><div style=\"background:transparent;padding:32px 20px 28px 20px;display:flex;flex-direction:column;align-items:center;gap:0;text-align:center;\"><span style=\"font-family:'youyou-yisong',serif;font-weight:normal;font-size:13px;letter-spacing:6px;color:rgba(0,0,0,0.38);line-height:1;margin-bottom:12px;\">$1</span><div style=\"width:40px;height:1px;background:rgba(0,0,0,0.12);margin-bottom:14px;\"></div><span style=\"font-family:'PING FANG CHANG AN',sans-serif;font-weight:normal;font-size:28px;letter-spacing:3px;color:rgba(0,0,0,0.88);line-height:1.3;margin-bottom:16px;\">$2</span><div style=\"width:40px;height:1px;background:rgba(0,0,0,0.12);margin-bottom:16px;\"></div><span style=\"font-family:'MaoKenTangYuan (beta)',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1.5px;color:rgba(0,0,0,0.33);line-height:2;max-width:480px;white-space:pre-wrap;word-wrap:break-word;\">$3</span></div>",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "a3a94e0d-5a1a-45c9-9b20-4a8aa7ab524a",
+                "scriptName": "小说标题-夜间",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/\\[CHAPTER_HEADER\\]\\s*NUM:\\s*(.+?)\\s*TITLE:\\s*(.+?)\\s*BRIEF:\\s*(.+?)\\s*\\[\\/CHAPTER_HEADER\\]/gs",
+                "trimStrings": [],
+                "replaceString": "<style>@import url(\"https://fontsapi.zeoseven.com/615/main/result.css\");@import url(\"https://fontsapi.zeoseven.com/492/main/result.css\");@import url(\"https://fontsapi.zeoseven.com/383/main/result.css\");</style><div style=\"background:transparent;padding:32px 20px 28px 20px;display:flex;flex-direction:column;align-items:center;gap:0;text-align:center;\"><span style=\"font-family:'youyou-yisong',serif;font-weight:normal;font-size:13px;letter-spacing:6px;color:rgba(255,255,255,0.42);line-height:1;margin-bottom:12px;\">$1</span><div style=\"width:40px;height:1px;background:rgba(255,255,255,0.14);margin-bottom:14px;\"></div><span style=\"font-family:'PING FANG CHANG AN',sans-serif;font-weight:normal;font-size:28px;letter-spacing:3px;color:rgba(255,255,255,0.92);line-height:1.3;margin-bottom:16px;\">$2</span><div style=\"width:40px;height:1px;background:rgba(255,255,255,0.14);margin-bottom:16px;\"></div><span style=\"font-family:'MaoKenTangYuan (beta)',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1.5px;color:rgba(255,255,255,0.38);line-height:2;max-width:480px;white-space:pre-wrap;word-wrap:break-word;\">$3</span></div>",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "90813d39-17b0-4eaf-a0a2-d36ee5fc8b18",
+                "scriptName": "摘要&伏笔-日间",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\[SYNOPSIS_BLOCK\\]\\s+TIME:\\s*([^\\n]*?)\\s+LOCATION:\\s*([^\\n]*?)\\s+SYNOPSIS:\\s*([^\\n]*?)\\s+FORESHADOW_1:\\s*([^\\n]*?)\\s+FORESHADOW_2:\\s*([^\\n]*?)\\s+FORESHADOW_3:\\s*([^\\n]*?)\\s*\\[\\/SYNOPSIS_BLOCK\\]/g",
+                "trimStrings": [],
+                "replaceString": "<div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(0,0,0,0.35);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(0,0,0,0.32)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">synopsis</span></summary><div style=\"margin-top:12px;padding-left:14px;border-left:1.5px solid rgba(0,0,0,0.14);\"><div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,0.10);\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:9px;letter-spacing:4px;color:rgba(0,0,0,0.40);white-space:nowrap;\">$1</span><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:9px;letter-spacing:4px;color:rgba(0,0,0,0.40);white-space:nowrap;\">$2</span></div><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:0.5px;color:rgba(0,0,0,0.65);line-height:2;margin-bottom:18px;white-space:pre-wrap;word-wrap:break-word;\">$3</div><div style=\"border-top:1px solid rgba(0,0,0,0.08);padding-top:12px;display:flex;flex-direction:column;gap:5px;\"><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:10px;letter-spacing:1px;color:rgba(0,0,0,0.35);line-height:1.8;padding-left:10px;border-left:1.5px solid rgba(0,0,0,0.12);\">$4</div><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:10px;letter-spacing:1px;color:rgba(0,0,0,0.35);line-height:1.8;padding-left:10px;border-left:1.5px solid rgba(0,0,0,0.12);\">$5</div><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:10px;letter-spacing:1px;color:rgba(0,0,0,0.35);line-height:1.8;padding-left:10px;border-left:1.5px solid rgba(0,0,0,0.12);\">$6</div></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "249bc217-9531-4383-8834-4b817d152097",
+                "scriptName": "摘要&伏笔-夜间",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/\\[SYNOPSIS_BLOCK\\]\\s+TIME:\\s*([^\\n]*?)\\s+LOCATION:\\s*([^\\n]*?)\\s+SYNOPSIS:\\s*([^\\n]*?)\\s+FORESHADOW_1:\\s*([^\\n]*?)\\s+FORESHADOW_2:\\s*([^\\n]*?)\\s+FORESHADOW_3:\\s*([^\\n]*?)\\s*\\[\\/SYNOPSIS_BLOCK\\]/g",
+                "trimStrings": [],
+                "replaceString": "<div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(255,255,255,0.38);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(255,255,255,0.35)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">synopsis</span></summary><div style=\"margin-top:12px;padding-left:14px;border-left:1.5px solid rgba(255,255,255,0.16);\"><div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12);\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:9px;letter-spacing:4px;color:rgba(255,255,255,0.42);white-space:nowrap;\">$1</span><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:9px;letter-spacing:4px;color:rgba(255,255,255,0.42);white-space:nowrap;\">$2</span></div><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:0.5px;color:rgba(255,255,255,0.68);line-height:2;margin-bottom:18px;white-space:pre-wrap;word-wrap:break-word;\">$3</div><div style=\"border-top:1px solid rgba(255,255,255,0.10);padding-top:12px;display:flex;flex-direction:column;gap:5px;\"><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:10px;letter-spacing:1px;color:rgba(255,255,255,0.38);line-height:1.8;padding-left:10px;border-left:1.5px solid rgba(255,255,255,0.14);\">$4</div><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:10px;letter-spacing:1px;color:rgba(255,255,255,0.38);line-height:1.8;padding-left:10px;border-left:1.5px solid rgba(255,255,255,0.14);\">$5</div><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:10px;letter-spacing:1px;color:rgba(255,255,255,0.38);line-height:1.8;padding-left:10px;border-left:1.5px solid rgba(255,255,255,0.14);\">$6</div></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "4c3fa9af-6a87-4643-a333-6bca6006e3bf",
+                "scriptName": "剧情选项-日间",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\[CHOICES\\]\\s*OPTION_A:\\s*(.+?)\\s*OPTION_B:\\s*(.+?)\\s*OPTION_C:\\s*(.+?)\\s*OPTION_D:\\s*(.+?)\\s*\\[\\/CHOICES\\]/g",
+                "trimStrings": [],
+                "replaceString": "<style>@font-face{font-family:\"ZSFT-ej\";src:url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");font-style:normal;font-weight:400;font-display:swap;}@import url(\"https://fontsapi.zeoseven.com/831/main/result.css\");</style><div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(0,0,0,0.22);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(0,0,0,0.20)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">Choices</span></summary><div style=\"margin-top:10px;padding:24px 20px 20px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:0;\"><div style=\"display:flex;flex-direction:column;gap:10px;width:100%;\"><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(0,0,0,0.22);flex-shrink:0;min-width:18px;\">A</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(0,0,0,0.50);line-height:1.8;\">$1</span></div><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(0,0,0,0.22);flex-shrink:0;min-width:18px;\">B</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(0,0,0,0.50);line-height:1.8;\">$2</span></div><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(0,0,0,0.22);flex-shrink:0;min-width:18px;\">C</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(0,0,0,0.50);line-height:1.8;\">$3</span></div><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(0,0,0,0.22);flex-shrink:0;min-width:18px;\">D</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(0,0,0,0.50);line-height:1.8;\">$4</span></div></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "63f797e6-45d3-4f79-b4d2-897c7e3cf194",
+                "scriptName": "剧情选择-夜间",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/\\[CHOICES\\]\\s*OPTION_A:\\s*(.+?)\\s*OPTION_B:\\s*(.+?)\\s*OPTION_C:\\s*(.+?)\\s*OPTION_D:\\s*(.+?)\\s*\\[\\/CHOICES\\]/g",
+                "trimStrings": [],
+                "replaceString": "<style>@font-face{font-family:\"ZSFT-ej\";src:url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");font-style:normal;font-weight:400;font-display:swap;}@import url(\"https://fontsapi.zeoseven.com/831/main/result.css\");</style><div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(255,255,255,0.22);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(255,255,255,0.22)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">Choices</span></summary><div style=\"margin-top:10px;padding:24px 20px 20px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:0;\"><div style=\"display:flex;flex-direction:column;gap:10px;width:100%;\"><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(255,255,255,0.25);flex-shrink:0;min-width:18px;\">A</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(255,255,255,0.52);line-height:1.8;\">$1</span></div><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(255,255,255,0.25);flex-shrink:0;min-width:18px;\">B</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(255,255,255,0.52);line-height:1.8;\">$2</span></div><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(255,255,255,0.25);flex-shrink:0;min-width:18px;\">C</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(255,255,255,0.52);line-height:1.8;\">$3</span></div><div style=\"display:flex;align-items:baseline;gap:10px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:12px;letter-spacing:2px;color:rgba(255,255,255,0.25);flex-shrink:0;min-width:18px;\">D</span><span style=\"font-family:'Maoken Glitch Serif',serif;font-weight:normal;font-size:13px;letter-spacing:1px;color:rgba(255,255,255,0.52);line-height:1.8;\">$4</span></div></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "c5d3de53-7191-40d3-9f34-62a45da2ba80",
+                "scriptName": "选项美化可点击@风是透明的河流",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/\\[CHOICES\\]\\s*OPTION_A:\\s*(.*?)\\s*OPTION_B:\\s*(.*?)\\s*OPTION_C:\\s*(.*?)\\s*OPTION_D:\\s*(.*?)\\s*\\[\\/CHOICES\\]/s",
+                "trimStrings": [],
+                "replaceString": "```html\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n</head>\n<body>\n    <style>\n        @font-face {\n            font-family: \"ZSFT-ej\";\n            src: url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");\n            font-style: normal;\n            font-weight: 400;\n            font-display: swap;\n        }\n        @import url(\"https://fontsapi.zeoseven.com/831/main/result.css\");\n\n        /* 根变量：白天模式 */\n        .choices-panel-root {\n            --fold-text: rgba(0, 0, 0, 0.22);\n            --fold-stroke: rgba(0, 0, 0, 0.20);\n            --fold-hover-text: rgba(0, 0, 0, 0.40);\n\n            --panel-bg: rgba(255, 255, 255, 0.72);\n            --panel-border: rgba(0, 0, 0, 0.06);\n            --panel-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);\n            --panel-text: #1e293b;\n            --label-text: rgba(0, 0, 0, 0.38);\n            --option-text: rgba(0, 0, 0, 0.62);\n            --option-bg: rgba(0, 0, 0, 0.03);\n            --option-hover-bg: rgba(0, 0, 0, 0.06);\n            --option-active-bg: rgba(0, 0, 0, 0.10);\n            --divider-color: rgba(0, 0, 0, 0.06);\n            --toggle-color: rgba(0, 0, 0, 0.30);\n\n            --blur-amount: 18px;\n            --radius: 14px;\n        }\n\n        /* 夜晚模式 */\n        .choices-panel-root.dark-mode {\n            --fold-text: rgba(255, 255, 255, 0.18);\n            --fold-stroke: rgba(255, 255, 255, 0.16);\n            --fold-hover-text: rgba(255, 255, 255, 0.35);\n\n            --panel-bg: rgba(15, 23, 42, 0.72);\n            --panel-border: rgba(255, 255, 255, 0.06);\n            --panel-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);\n            --panel-text: #e2e8f0;\n            --label-text: rgba(255, 255, 255, 0.35);\n            --option-text: rgba(255, 255, 255, 0.72);\n            --option-bg: rgba(255, 255, 255, 0.04);\n            --option-hover-bg: rgba(255, 255, 255, 0.08);\n            --option-active-bg: rgba(255, 255, 255, 0.12);\n            --divider-color: rgba(255, 255, 255, 0.06);\n            --toggle-color: rgba(255, 255, 255, 0.30);\n        }\n\n        .choices-panel-root {\n            width: 100%;\n            max-width: 600px;\n            margin: 12px auto;\n            font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n            transition: all 0.3s ease;\n        }\n\n        /* 折叠触发器：完全透明，无背景无边框无阴影 */\n        .choices-panel-root > summary {\n            display: flex;\n            align-items: center;\n            gap: 6px;\n            cursor: pointer;\n            list-style: none;\n            user-select: none;\n            -webkit-user-select: none;\n            outline: none;\n            /* 关键修正：加左侧16px缩进，和对齐其他板块 */\n            padding: 6px 0 6px 20px;\n            white-space: nowrap;\n            overflow: hidden;\n            background: transparent;\n            border: none;\n            line-height: 1;\n        }\n        .choices-panel-root > summary::-webkit-details-marker {\n            display: none;\n        }\n\n        .fold-arrow {\n            flex-shrink: 0;\n            width: 8px;\n            height: 8px;\n            transition: transform 0.3s ease;\n        }\n        .choices-panel-root[open] > summary .fold-arrow {\n            transform: rotate(90deg);\n        }\n\n        .fold-label {\n            flex-shrink: 0;\n            white-space: nowrap;\n            font-family: \"ZSFT-ej\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n            font-weight: 400;\n            font-size: 10px;\n            letter-spacing: 5px;\n            text-transform: uppercase;\n            color: var(--fold-text);\n            transition: color 0.3s;\n        }\n        .choices-panel-root > summary:hover .fold-label {\n            color: var(--fold-hover-text);\n        }\n\n        .choices-panel-content {\n            margin-top: 10px;\n            padding: 24px 20px 20px 20px;\n            display: flex;\n            flex-direction: column;\n            gap: 16px;\n\n            background: var(--panel-bg);\n            border: 1px solid var(--panel-border);\n            border-radius: var(--radius);\n            box-shadow: var(--panel-shadow);\n            backdrop-filter: blur(var(--blur-amount));\n            -webkit-backdrop-filter: blur(var(--blur-amount));\n\n            transition: background 0.4s ease, box-shadow 0.4s ease;\n        }\n\n        .options-list {\n            display: flex;\n            flex-direction: column;\n            gap: 10px;\n            width: 100%;\n        }\n\n        .option-row {\n            display: flex;\n            align-items: baseline;\n            gap: 10px;\n            padding: 8px 12px;\n            border-radius: 8px;\n            background: var(--option-bg);\n            cursor: pointer;\n            transition: background 0.2s ease, transform 0.15s ease;\n        }\n        .option-row:hover {\n            background: var(--option-hover-bg);\n            transform: translateX(2px);\n        }\n        .option-row:active {\n            background: var(--option-active-bg);\n            transform: translateX(0);\n        }\n\n        .option-label {\n            font-family: \"ZSFT-ej\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n            font-weight: 400;\n            font-size: 12px;\n            letter-spacing: 2px;\n            color: var(--label-text);\n            flex-shrink: 0;\n            min-width: 18px;\n            transition: color 0.3s;\n        }\n\n        .option-text {\n            font-family: \"Maoken Glitch Serif\", \"Noto Serif SC\", Georgia, \"Times New Roman\", serif;\n            font-weight: 400;\n            font-size: 13px;\n            letter-spacing: 1px;\n            color: var(--option-text);\n            line-height: 1.8;\n            transition: color 0.3s;\n        }\n\n        .panel-footer-row {\n            display: flex;\n            justify-content: flex-end;\n            align-items: center;\n            padding-top: 6px;\n            border-top: 1px solid var(--divider-color);\n        }\n\n        .theme-toggle-btn {\n            background: transparent;\n            border: none;\n            cursor: pointer;\n            padding: 4px 8px;\n            border-radius: 20px;\n            font-family: \"ZSFT-ej\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n            font-size: 10px;\n            letter-spacing: 3px;\n            color: var(--toggle-color);\n            transition: color 0.3s, background 0.3s;\n            outline: none;\n            white-space: nowrap;\n        }\n        .theme-toggle-btn:hover {\n            color: var(--option-text);\n            background: var(--option-hover-bg);\n        }\n    </style>\n\n    <details class=\"choices-panel-root\" id=\"action-choices-panel\">\n        <summary>\n            <svg class=\"fold-arrow\" width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\"\n                 stroke=\"var(--fold-stroke)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <polyline points=\"9 18 15 12 9 6\"/>\n            </svg>\n            <span class=\"fold-label\">Choices</span>\n        </summary>\n\n        <div class=\"choices-panel-content\">\n            <div class=\"options-list\">\n                <div class=\"option-row\" onclick=\"appendChoiceToInput(this)\">\n                    <span class=\"option-label\">A</span>\n                    <span class=\"option-text\">$1</span>\n                </div>\n                <div class=\"option-row\" onclick=\"appendChoiceToInput(this)\">\n                    <span class=\"option-label\">B</span>\n                    <span class=\"option-text\">$2</span>\n                </div>\n                <div class=\"option-row\" onclick=\"appendChoiceToInput(this)\">\n                    <span class=\"option-label\">C</span>\n                    <span class=\"option-text\">$3</span>\n                </div>\n                <div class=\"option-row\" onclick=\"appendChoiceToInput(this)\">\n                    <span class=\"option-label\">D</span>\n                    <span class=\"option-text\">$4</span>\n                </div>\n            </div>\n\n            <div class=\"panel-footer-row\">\n                <button class=\"theme-toggle-btn\" onclick=\"togglePanelTheme(event)\">\n                    🌓 日夜\n                </button>\n            </div>\n        </div>\n    </details>\n\n    <script>\n        function getSendTextarea() {\n            const byId = document.getElementById('send_textarea') || document.getElementById('prompt_area');\n            if (byId) return byId;\n\n            const allTextareas = document.querySelectorAll('textarea');\n            const visibleTextareas = [];\n            for (const ta of allTextareas) {\n                if (ta.hidden) continue;\n                const style = window.getComputedStyle(ta);\n                if (style.display === 'none' || style.visibility === 'hidden') continue;\n                visibleTextareas.push(ta);\n            }\n            for (const ta of visibleTextareas) {\n                const id = (ta.id || '').toLowerCase();\n                const name = (ta.name || '').toLowerCase();\n                const placeholder = (ta.placeholder || '').toLowerCase();\n                const aria = (ta.getAttribute('aria-label') || '').toLowerCase();\n                const dI18n = (ta.getAttribute('data-i18n') || '').toLowerCase();\n                if (\n                    id.includes('send') || id.includes('prompt') ||\n                    name.includes('send') || name.includes('prompt') ||\n                    placeholder.includes('输入') || placeholder.includes('发送') || placeholder.includes('type') || placeholder.includes('message') ||\n                    aria.includes('send') || aria.includes('input') || aria.includes('message') ||\n                    dI18n.includes('send') || dI18n.includes('input')\n                ) return ta;\n            }\n            if (visibleTextareas.length === 1) return visibleTextareas[0];\n            if (window.parent && window.parent !== window) {\n                try {\n                    const parentDoc = window.parent.document;\n                    const parentById = parentDoc.getElementById('send_textarea') || parentDoc.getElementById('prompt_area');\n                    if (parentById) return parentById;\n                    const parentAreas = parentDoc.querySelectorAll('textarea');\n                    for (const ta of parentAreas) {\n                        if (ta.hidden) continue;\n                        const style = parent.window.getComputedStyle(ta);\n                        if (style.display === 'none' || style.visibility === 'hidden') continue;\n                        const id = (ta.id || '').toLowerCase();\n                        if (id.includes('send') || id.includes('prompt')) return ta;\n                    }\n                } catch (e) {}\n            }\n            return null;\n        }\n\n        function togglePanelTheme(event) {\n            event.stopPropagation();\n            event.preventDefault();\n            const root = event.currentTarget.closest('.choices-panel-root');\n            if (root) {\n                root.classList.toggle('dark-mode');\n                const isDark = root.classList.contains('dark-mode');\n                try { localStorage.setItem('st-choices-theme-dark', isDark); } catch (e) {}\n            }\n        }\n\n        (function initPanelTheme() {\n            const roots = document.querySelectorAll('.choices-panel-root:not(.theme-initialized)');\n            let wantsDark = false;\n            try { wantsDark = localStorage.getItem('st-choices-theme-dark') === 'true'; } catch (e) {}\n            roots.forEach(root => {\n                if (wantsDark) root.classList.add('dark-mode');\n                root.classList.add('theme-initialized');\n            });\n        })();\n\n        function appendChoiceToInput(element) {\n            const textElement = element.querySelector('.option-text');\n            if (!textElement) return;\n            const choiceText = textElement.innerText.trim();\n            const textarea = getSendTextarea();\n\n            if (textarea) {\n                if (textarea.value.length > 0 && !textarea.value.match(/[\\s\\n]$/)) {\n                    textarea.value += ' ';\n                }\n                textarea.value += choiceText;\n                const inputEvent = new Event('input', { bubbles: true });\n                textarea.dispatchEvent(inputEvent);\n                textarea.focus();\n            } else {\n                if (navigator.clipboard && navigator.clipboard.writeText) {\n                    navigator.clipboard.writeText(choiceText).catch(() => { fallbackCopy(choiceText); });\n                } else {\n                    fallbackCopy(choiceText);\n                }\n            }\n        }\n\n        function fallbackCopy(text) {\n            const tmp = document.createElement('textarea');\n            tmp.value = text;\n            tmp.style.position = 'fixed';\n            tmp.style.left = '-9999px';\n            tmp.style.top = '-9999px';\n            document.body.appendChild(tmp);\n            tmp.focus();\n            tmp.select();\n            try { document.execCommand('copy'); } catch (e) {}\n            document.body.removeChild(tmp);\n        }\n    </script>\n</body>\n</html>\n```",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "fac63948-8e13-4184-a70f-761e94378d65",
+                "scriptName": "状态栏-日间",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\[STATUS\\]\\s*TIME:\\s*(.+?)\\s*PLACE:\\s*(.+?)\\s*VOICE:\\s*(.+?)\\s*LOVE:\\s*(.+?)\\s*NSFW:\\s*(.+?)\\s*POSITION:\\s*(.+?)\\s*DIRTY:\\s*(.+?)\\s*\\[\\/STATUS\\]/g",
+                "trimStrings": [],
+                "replaceString": "<style>@font-face{font-family:\"ZSFT-ej\";src:url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");font-style:normal;font-weight:400;font-display:swap;}@import url(\"https://fontsapi.zeoseven.com/881/main/result.css\");</style><div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(0,0,0,0.22);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(0,0,0,0.20)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">Status</span></summary><div style=\"margin-top:10px;padding:24px 20px 20px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:0;\"><div style=\"display:flex;flex-direction:column;gap:10px;width:100%;margin-bottom:16px;\"><div style=\"display:flex;align-items:center;gap:8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(0,0,0,0.25)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(0,0,0,0.48);line-height:1;\">$1</span></div><div style=\"display:flex;align-items:center;gap:8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(0,0,0,0.25)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(0,0,0,0.48);line-height:1;\">$2</span></div></div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:4px;color:rgba(0,0,0,0.30);text-transform:uppercase;line-height:1;margin-bottom:10px;\">Inner Voice</span><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(0,0,0,0.42);line-height:2;margin-bottom:16px;border-left:1.5px solid rgba(0,0,0,0.10);padding-left:14px;white-space:pre-wrap;word-wrap:break-word;\">$3</div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:4px;color:rgba(0,0,0,0.30);text-transform:uppercase;line-height:1;margin-bottom:10px;\">Affection</span><div style=\"display:flex;align-items:center;gap:10px;width:100%;margin-bottom:18px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"rgba(0,0,0,0.18)\" stroke=\"none\"><path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/></svg><div style=\"flex:1;height:3px;background:rgba(0,0,0,0.08);border-radius:2px;overflow:hidden;\"><div style=\"width:$4%;height:100%;background:rgba(0,0,0,0.28);border-radius:2px;\"></div></div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:1px;color:rgba(0,0,0,0.25);flex-shrink:0;min-width:28px;text-align:right;\">$4</span></div><div style=\"display:flex;align-items:center;gap:10px;margin-bottom:14px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:4px;color:rgba(0,0,0,0.30);text-transform:uppercase;line-height:1;\">NSFW</span><div style=\"width:28px;height:14px;border-radius:2px;background:rgba(0,0,0,calc(0.06 + 0.12 * $5));position:relative;border:1px solid rgba(0,0,0,calc(0.10 + 0.10 * $5));box-sizing:border-box;\"><div style=\"width:12px;height:10px;border-radius:1px;background:rgba(0,0,0,calc(0.15 + 0.18 * $5));position:absolute;top:1px;left:calc(1px + 13px * $5);\"></div></div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:2px;color:rgba(0,0,0,calc(0.20 + 0.10 * $5));text-transform:uppercase;\">$5</span></div><div style=\"width:100%;max-height:calc($5 * 300px);overflow:hidden;opacity:calc($5 * 1);\"><div style=\"display:flex;flex-direction:column;gap:10px;padding-left:14px;border-left:1.5px solid rgba(0,0,0,0.10);\"><div style=\"display:flex;flex-direction:column;gap:4px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:3px;color:rgba(0,0,0,0.22);text-transform:uppercase;\">Position</span><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(0,0,0,0.42);line-height:1.9;white-space:pre-wrap;word-wrap:break-word;\">$6</span></div><div style=\"display:flex;flex-direction:column;gap:4px;margin-top:6px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:3px;color:rgba(0,0,0,0.22);text-transform:uppercase;\">Dirty Mind</span><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(0,0,0,0.42);line-height:1.9;white-space:pre-wrap;word-wrap:break-word;\">$7</span></div></div></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "b2d42b64-d70b-4cc6-9129-eb155548ea8c",
+                "scriptName": "状态栏-夜间",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/\\[STATUS\\]\\s*TIME:\\s*(.+?)\\s*PLACE:\\s*(.+?)\\s*VOICE:\\s*(.+?)\\s*LOVE:\\s*(.+?)\\s*NSFW:\\s*(.+?)\\s*POSITION:\\s*(.+?)\\s*DIRTY:\\s*(.+?)\\s*\\[\\/STATUS\\]/g",
+                "trimStrings": [],
+                "replaceString": "<style>@font-face{font-family:\"ZSFT-ej\";src:url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");font-style:normal;font-weight:400;font-display:swap;}@import url(\"https://fontsapi.zeoseven.com/881/main/result.css\");</style><div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(255,255,255,0.22);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(255,255,255,0.22)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">Status</span></summary><div style=\"margin-top:10px;padding:24px 20px 20px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:0;\"><div style=\"display:flex;flex-direction:column;gap:10px;width:100%;margin-bottom:16px;\"><div style=\"display:flex;align-items:center;gap:8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(255,255,255,0.28)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(255,255,255,0.50);line-height:1;\">$1</span></div><div style=\"display:flex;align-items:center;gap:8px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(255,255,255,0.28)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(255,255,255,0.50);line-height:1;\">$2</span></div></div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:4px;color:rgba(255,255,255,0.32);text-transform:uppercase;line-height:1;margin-bottom:10px;\">Inner Voice</span><div style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(255,255,255,0.45);line-height:2;margin-bottom:16px;border-left:1.5px solid rgba(255,255,255,0.12);padding-left:14px;white-space:pre-wrap;word-wrap:break-word;\">$3</div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:4px;color:rgba(255,255,255,0.32);text-transform:uppercase;line-height:1;margin-bottom:10px;\">Affection</span><div style=\"display:flex;align-items:center;gap:10px;width:100%;margin-bottom:18px;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"rgba(255,255,255,0.20)\" stroke=\"none\"><path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/></svg><div style=\"flex:1;height:3px;background:rgba(255,255,255,0.10);border-radius:2px;overflow:hidden;\"><div style=\"width:$4%;height:100%;background:rgba(255,255,255,0.30);border-radius:2px;\"></div></div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:1px;color:rgba(255,255,255,0.28);flex-shrink:0;min-width:28px;text-align:right;\">$4</span></div><div style=\"display:flex;align-items:center;gap:10px;margin-bottom:14px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:11px;letter-spacing:4px;color:rgba(255,255,255,0.32);text-transform:uppercase;line-height:1;\">NSFW</span><div style=\"width:28px;height:14px;border-radius:2px;background:rgba(255,255,255,calc(0.06 + 0.12 * $5));position:relative;border:1px solid rgba(255,255,255,calc(0.10 + 0.12 * $5));box-sizing:border-box;\"><div style=\"width:12px;height:10px;border-radius:1px;background:rgba(255,255,255,calc(0.18 + 0.20 * $5));position:absolute;top:1px;left:calc(1px + 13px * $5);\"></div></div><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,calc(0.22 + 0.12 * $5));text-transform:uppercase;\">$5</span></div><div style=\"width:100%;max-height:calc($5 * 300px);overflow:hidden;opacity:calc($5 * 1);\"><div style=\"display:flex;flex-direction:column;gap:10px;padding-left:14px;border-left:1.5px solid rgba(255,255,255,0.12);\"><div style=\"display:flex;flex-direction:column;gap:4px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:3px;color:rgba(255,255,255,0.25);text-transform:uppercase;\">Position</span><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(255,255,255,0.45);line-height:1.9;white-space:pre-wrap;word-wrap:break-word;\">$6</span></div><div style=\"display:flex;flex-direction:column;gap:4px;margin-top:6px;\"><span style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:3px;color:rgba(255,255,255,0.25);text-transform:uppercase;\">Dirty Mind</span><span style=\"font-family:'Jigmo',sans-serif;font-weight:normal;font-size:12px;letter-spacing:1px;color:rgba(255,255,255,0.45);line-height:1.9;white-space:pre-wrap;word-wrap:break-word;\">$7</span></div></div></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "b67c45a4-4722-431d-83c0-2c97a49fdc13",
+                "scriptName": "抗截断-日间",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\[YU\\]([\\s\\S]*?)\\[\\/YU\\]/g",
+                "trimStrings": [],
+                "replaceString": "<style>@import url(\"https://fontsapi.zeoseven.com/959/main/result.css\");@font-face{font-family:\"ZSFT-ej\";src:url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");font-style:normal;font-weight:400;font-display:swap;}</style><div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(0,0,0,0.22);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(0,0,0,0.20)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">Yu</span></summary><div style=\"margin-top:10px;display:flex;justify-content:center;\"><div style=\"border:1px solid rgba(0,0,0,0.12);padding:28px 32px;text-align:center;\"><span style=\"font-family:'XIANGCUIJIXUESONG',serif;font-weight:normal;font-size:13px;letter-spacing:2px;color:rgba(0,0,0,0.48);line-height:2.2;white-space:pre-wrap;word-wrap:break-word;\">$1</span></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "9f5a7986-d381-433c-ad43-a3588e0bedba",
+                "scriptName": "抗截断-夜间",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "\\[YU\\]([\\s\\S]*?)\\[\\/YU\\]",
+                "trimStrings": [],
+                "replaceString": "<style>@import url(\"https://fontsapi.zeoseven.com/959/main/result.css\");@font-face{font-family:\"ZSFT-ej\";src:url(\"https://fontsapi.zeoseven.com/ej/main.woff2\") format(\"woff2\");font-style:normal;font-weight:400;font-display:swap;}</style><div style=\"background:transparent;padding:10px 20px;\"><details style=\"border:none;\"><summary style=\"font-family:'ZSFT-ej',serif;font-weight:normal;font-size:10px;letter-spacing:5px;color:rgba(255,255,255,0.22);text-transform:uppercase;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;line-height:1;-webkit-user-select:none;user-select:none;outline:none;padding:4px 0;white-space:nowrap;overflow:hidden;\"><svg width=\"8\" height=\"8\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"rgba(255,255,255,0.22)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;\"><polyline points=\"9 18 15 12 9 6\"/></svg><span style=\"flex-shrink:0;white-space:nowrap;\">Yu</span></summary><div style=\"margin-top:10px;display:flex;justify-content:center;\"><div style=\"border:1px solid rgba(255,255,255,0.14);padding:28px 32px;text-align:center;\"><span style=\"font-family:'XIANGCUIJIXUESONG',serif;font-weight:normal;font-size:13px;letter-spacing:2px;color:rgba(255,255,255,0.50);line-height:2.2;white-space:pre-wrap;word-wrap:break-word;\">$1</span></div></div></details></div>\n",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "a90b27c8-3cd0-456a-aebe-f839e5b97bf5",
+                "scriptName": "6楼外仅发送摘要伏笔",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "[\\s\\S]*?\\[SYNOPSIS_BLOCK\\]([\\s\\S]*?)\\[\\/SYNOPSIS_BLOCK\\][\\s\\S]*",
+                "trimStrings": [],
+                "replaceString": "$1",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": 6,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "2783c064-e7af-435c-a09b-32389b07712e",
+                "scriptName": "去抗空回",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\n?\\[STATEMENT\\]((?:(?!\\[\\/STATEMENT\\])[\\s\\S])*?)\\[\\/STATEMENT\\]\\n?/g",
+                "trimStrings": [],
+                "replaceString": "",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "8bfc6a8f-b81f-4807-8754-d87f37efe278",
+                "scriptName": "去除标签",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "<\\/?content>",
+                "trimStrings": [],
+                "replaceString": "",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "f4c8c6cc-b290-4ee3-906f-e22f49308511",
+                "scriptName": "去除草稿",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/<draft>[\\s\\S]*?<\\/draft>/g",
+                "trimStrings": [],
+                "replaceString": "",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
+            },
+            {
+                "id": "a8fc972b-70de-4ec8-b124-d4a0301af883",
+                "scriptName": "不发送多余内容",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/\\[STATEMENT\\][\\s\\S]*?\\[\\/STATEMENT\\]|\\[CHAPTER_HEADER\\][\\s\\S]*?\\[\\/CHAPTER_HEADER\\]|\\[CHOICES\\][\\s\\S]*?\\[\\/CHOICES\\]|\\[STATUS\\][\\s\\S]*?\\[\\/STATUS\\]|\\[YU\\][\\s\\S]*?\\[\\/YU\\]/g",
+                "trimStrings": [],
+                "replaceString": "",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "3ccf43fe-9b76-4c07-b51f-468c7d1c5777",
+                "scriptName": "不发送思维链",
+                "disabled": false,
+                "runOnEdit": false,
+                "findRegex": "<thinking>([\\s\\S]*?)</thinking>",
+                "trimStrings": [],
+                "replaceString": "",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "9547c90f-30cb-443f-ae71-29f8dcc783c8",
+                "scriptName": "2楼外不发送小剧场",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "<details>[\\s\\S]*?<\\/details>",
+                "trimStrings": [],
+                "replaceString": "",
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": 2,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            }
+        ],
+        "baibaiToolkit": {
+            "regexGroups": {
+                "version": 1,
+                "groups": [],
+                "scripts": {
+                    "2bbf8c7c-8f65-47ca-a2b5-1ea947921ff7": {
+                        "groupId": "__ungrouped",
+                        "order": 0
+                    },
+                    "a3a94e0d-5a1a-45c9-9b20-4a8aa7ab524a": {
+                        "groupId": "__ungrouped",
+                        "order": 1
+                    },
+                    "90813d39-17b0-4eaf-a0a2-d36ee5fc8b18": {
+                        "groupId": "__ungrouped",
+                        "order": 2
+                    },
+                    "249bc217-9531-4383-8834-4b817d152097": {
+                        "groupId": "__ungrouped",
+                        "order": 3
+                    },
+                    "4c3fa9af-6a87-4643-a333-6bca6006e3bf": {
+                        "groupId": "__ungrouped",
+                        "order": 4
+                    },
+                    "63f797e6-45d3-4f79-b4d2-897c7e3cf194": {
+                        "groupId": "__ungrouped",
+                        "order": 5
+                    },
+                    "c5d3de53-7191-40d3-9f34-62a45da2ba80": {
+                        "groupId": "__ungrouped",
+                        "order": 6
+                    },
+                    "fac63948-8e13-4184-a70f-761e94378d65": {
+                        "groupId": "__ungrouped",
+                        "order": 7
+                    },
+                    "b2d42b64-d70b-4cc6-9129-eb155548ea8c": {
+                        "groupId": "__ungrouped",
+                        "order": 8
+                    },
+                    "b67c45a4-4722-431d-83c0-2c97a49fdc13": {
+                        "groupId": "__ungrouped",
+                        "order": 9
+                    },
+                    "9f5a7986-d381-433c-ad43-a3588e0bedba": {
+                        "groupId": "__ungrouped",
+                        "order": 10
+                    },
+                    "a90b27c8-3cd0-456a-aebe-f839e5b97bf5": {
+                        "groupId": "__ungrouped",
+                        "order": 11
+                    },
+                    "2783c064-e7af-435c-a09b-32389b07712e": {
+                        "groupId": "__ungrouped",
+                        "order": 12
+                    },
+                    "8bfc6a8f-b81f-4807-8754-d87f37efe278": {
+                        "groupId": "__ungrouped",
+                        "order": 13
+                    },
+                    "f4c8c6cc-b290-4ee3-906f-e22f49308511": {
+                        "groupId": "__ungrouped",
+                        "order": 14
+                    },
+                    "a8fc972b-70de-4ec8-b124-d4a0301af883": {
+                        "groupId": "__ungrouped",
+                        "order": 15
+                    },
+                    "3ccf43fe-9b76-4c07-b51f-468c7d1c5777": {
+                        "groupId": "__ungrouped",
+                        "order": 16
+                    },
+                    "9547c90f-30cb-443f-ae71-29f8dcc783c8": {
+                        "groupId": "__ungrouped",
+                        "order": 17
+                    }
+                },
+                "ungrouped": {
+                    "name": "默认分组",
+                    "collapsed": false
+                }
+            }
+        }
+    },
+    "genamt": 350,
+    "max_length": 8192
+}

@@ -1,0 +1,6 @@
+{
+    "name": "OpenAI Harmony",
+    "prefix": "<thinking>",
+    "suffix": "</thinking>",
+    "separator": ""
+}
