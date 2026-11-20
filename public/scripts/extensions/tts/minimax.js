@@ -19,9 +19,9 @@ class MiniMaxTtsProvider {
         apiHost: 'https://api.minimax.io',
         model: 'speech-02-hd',
         voiceMap: {},
-        speed: 1.0,
-        volume: 1.0,
-        pitch: 1.0,
+        speed: { default: 1.0, min: 0.5, max: 2.0, step: 0.1 },
+        volume: { default: 1.0, min: 0.0, max: 10.0, step: 0.1 },
+        pitch: { default: 0, min: -12, max: 12, step: 1 },
         audioSampleRate: 32000,
         bitrate: 128000,
         format: 'mp3',
@@ -55,10 +55,6 @@ class MiniMaxTtsProvider {
                     <i class="fa-solid fa-key"></i>
                     <span>Click to set API Key</span>
                 </div>
-                <div id="minimax_group_id" class="menu_button menu_button_icon manage-api-keys" data-key="minimax_group_id">
-                    <i class="fa-solid fa-key"></i>
-                    <span>Click to set Group ID</span>
-                </div>
             </div>
             <div class="tts_block">
                 <label for="minimax_tts_api_host">API Host</label>
@@ -84,15 +80,15 @@ class MiniMaxTtsProvider {
 
             <div class="tts_block">
                 <label for="minimax_tts_speed">Speed: <span id="minimax_tts_speed_output"></span></label>
-                <input id="minimax_tts_speed" type="range" value="${this.defaultSettings.speed}" min="0.5" max="2.0" step="0.1" />
+                <input id="minimax_tts_speed" type="range" value="${this.defaultSettings.speed.default}" min="${this.defaultSettings.speed.min}" max="${this.defaultSettings.speed.max}" step="${this.defaultSettings.speed.step}" />
             </div>
             <div class="tts_block">
                 <label for="minimax_tts_volume">Volume: <span id="minimax_tts_volume_output"></span></label>
-                <input id="minimax_tts_volume" type="range" value="${this.defaultSettings.volume}" min="0.1" max="2.0" step="0.1" />
+                <input id="minimax_tts_volume" type="range" value="${this.defaultSettings.volume.default}" min="${this.defaultSettings.volume.min}" max="${this.defaultSettings.volume.max}" step="${this.defaultSettings.volume.step}" />
             </div>
             <div class="tts_block">
                 <label for="minimax_tts_pitch">Pitch: <span id="minimax_tts_pitch_output"></span></label>
-                <input id="minimax_tts_pitch" type="range" value="${this.defaultSettings.pitch}" min="0.5" max="2.0" step="0.1" />
+                <input id="minimax_tts_pitch" type="range" value="${this.defaultSettings.pitch.default}" min="${this.defaultSettings.pitch.min}" max="${this.defaultSettings.pitch.max}" step="${this.defaultSettings.pitch.step}" />
             </div>
             <div class="tts_block">
                 <label for="minimax_tts_format">Audio Format</label>
@@ -173,9 +169,8 @@ class MiniMaxTtsProvider {
 
     constructor() {
         this.handler = async function (/** @type {string} */ key) {
-            if (![SECRET_KEYS.MINIMAX, SECRET_KEYS.MINIMAX_GROUP_ID].includes(key)) return;
+            if (key !== SECRET_KEYS.MINIMAX) return;
             $('#api_key_minimax').toggleClass('success', !!secret_state[SECRET_KEYS.MINIMAX]);
-            $('#minimax_group_id').toggleClass('success', !!secret_state[SECRET_KEYS.MINIMAX_GROUP_ID]);
             await this.onRefreshClick();
         }.bind(this);
     }
@@ -190,14 +185,14 @@ class MiniMaxTtsProvider {
         this.settings.apiHost = $('#minimax_tts_api_host').val();
         this.settings.speed = parseFloat($('#minimax_tts_speed').val().toString());
         this.settings.volume = parseFloat($('#minimax_tts_volume').val().toString());
-        this.settings.pitch = parseFloat($('#minimax_tts_pitch').val().toString());
+        this.settings.pitch = parseInt($('#minimax_tts_pitch').val().toString());
         this.settings.model = $('#minimax_tts_model').find(':selected').val();
         this.settings.format = $('#minimax_tts_format').find(':selected').val();
         this.settings.customVoiceId = $('#minimax_tts_custom_voice_id').val();
 
         $('#minimax_tts_speed_output').text(this.settings.speed.toFixed(1));
         $('#minimax_tts_volume_output').text(this.settings.volume.toFixed(1));
-        $('#minimax_tts_pitch_output').text(this.settings.pitch.toFixed(1));
+        $('#minimax_tts_pitch_output').text(this.settings.pitch);
 
         saveTtsProviderSettings();
     }
@@ -458,6 +453,16 @@ class MiniMaxTtsProvider {
         // Only accept keys defined in defaultSettings
         this.settings = { ...this.defaultSettings };
 
+        // Flatten the settings fields with default/min/max definitions so the actual values are used
+        this.settings = Object.fromEntries(
+            Object.entries(this.defaultSettings).map(([key, value]) => {
+                if (value && typeof value === 'object' && 'default' in value) {
+                    return [key, value.default];
+                }
+                return [key, value];
+            }),
+        );
+
         for (const key in settings) {
             if (key in this.settings) {
                 this.settings[key] = settings[key];
@@ -469,6 +474,21 @@ class MiniMaxTtsProvider {
         // Ensure custom configuration arrays exist
         if (!this.settings.customModels) this.settings.customModels = [];
         if (!this.settings.customVoices) this.settings.customVoices = [];
+
+        // # Migrate settings
+        // Pitch value changed from float to int. If it's a float, let's try to extrapolate it to the new range
+        if (!Number.isInteger(this.settings.pitch)) {
+            const oldPitch = parseFloat(this.settings.pitch);
+            if (!isNaN(oldPitch)) {
+                // map old [0.5..1.0] to [-12..0], and [1.0..2.0] to [0..12] (old default was 1.0, new default is 0)
+                const newPitch = (oldPitch < 1.0) ? (oldPitch - 1.0) * 24 : (oldPitch - 1.0) * 12;
+                this.settings.pitch = Math.max(-12, Math.min(12, Math.round(newPitch)));
+                console.info(`MiniMax TTS: Migrated pitch from ${oldPitch} to ${this.settings.pitch}`);
+            } else {
+                this.settings.pitch = 0;
+                console.info(`MiniMax TTS: Migration reset pitch to default ${this.settings.pitch}`);
+            }
+        }
 
         $('#minimax_tts_api_host').val(this.settings.apiHost || 'https://api.minimax.io');
         $('#minimax_tts_model').val(this.settings.model);
@@ -546,7 +566,7 @@ class MiniMaxTtsProvider {
 
         $('#minimax_tts_speed_output').text(this.settings.speed.toFixed(1));
         $('#minimax_tts_volume_output').text(this.settings.volume.toFixed(1));
-        $('#minimax_tts_pitch_output').text(this.settings.pitch.toFixed(1));
+        $('#minimax_tts_pitch_output').text(this.settings.pitch);
 
         // Initialize custom configuration display
         this.updateCustomModelsDisplay();
@@ -563,13 +583,12 @@ class MiniMaxTtsProvider {
         }
 
         $('#api_key_minimax').toggleClass('success', !!secret_state[SECRET_KEYS.MINIMAX]);
-        $('#minimax_group_id').toggleClass('success', !!secret_state[SECRET_KEYS.MINIMAX_GROUP_ID]);
         [event_types.SECRET_WRITTEN, event_types.SECRET_DELETED, event_types.SECRET_ROTATED].forEach(event => {
             eventSource.on(event, this.handler);
         });
 
         // Only check ready status when API credentials are available
-        if (secret_state[SECRET_KEYS.MINIMAX] && secret_state[SECRET_KEYS.MINIMAX_GROUP_ID]) {
+        if (secret_state[SECRET_KEYS.MINIMAX]) {
             try {
                 await this.checkReady();
                 console.debug('MiniMax TTS: Settings loaded and ready');
@@ -583,8 +602,8 @@ class MiniMaxTtsProvider {
 
     // Perform a simple readiness check
     async checkReady() {
-        if (!secret_state[SECRET_KEYS.MINIMAX] || !secret_state[SECRET_KEYS.MINIMAX_GROUP_ID]) {
-            const error = new Error('API Key and Group ID are required');
+        if (!secret_state[SECRET_KEYS.MINIMAX]) {
+            const error = new Error('API Key is required');
             console.error('MiniMax TTS checkReady error:', error.message);
             throw error;
         }
@@ -684,8 +703,8 @@ class MiniMaxTtsProvider {
 
     async fetchTtsVoiceObjects() {
         try {
-            if (!secret_state[SECRET_KEYS.MINIMAX] || !secret_state[SECRET_KEYS.MINIMAX_GROUP_ID]) {
-                console.warn('MiniMax TTS: API Key and Group ID required for fetching voices');
+            if (!secret_state[SECRET_KEYS.MINIMAX]) {
+                console.warn('MiniMax TTS: API Key required for fetching voices');
                 console.warn('Using all available voices (default + custom). Please check your API credentials');
                 return this.getAllVoices();
             }
@@ -750,23 +769,26 @@ class MiniMaxTtsProvider {
     async fetchTtsGeneration(inputText, voiceId, language = null) {
         console.info(`Generating new MiniMax TTS for voice_id ${voiceId}`);
 
-        if (!secret_state[SECRET_KEYS.MINIMAX] || !secret_state[SECRET_KEYS.MINIMAX_GROUP_ID]) {
-            const error = new Error('API Key and Group ID are required');
+        if (!secret_state[SECRET_KEYS.MINIMAX]) {
+            const error = new Error('API Key is required');
             console.error('MiniMax TTS fetchTtsGeneration error:', error.message);
             throw error;
         }
+
+        /** @param {number} number @param {number} lower @param {number} upper @returns {number} */
+        const clamp = (number, lower, upper) => Math.min(Math.max(number, lower), upper);
 
         const requestBody = {
             text: inputText,
             voiceId: voiceId,
             apiHost: this.settings.apiHost,
-            model: this.settings.model || 'speech-02-hd',
-            speed: Number(this.settings.speed) || 1.0,
-            volume: Number(this.settings.volume) || 1.0,
-            pitch: Number(this.settings.pitch) || 1.0,
-            audioSampleRate: Number(this.settings.audioSampleRate) || 32000,
-            bitrate: Number(this.settings.bitrate) || 128000,
-            format: this.settings.format || 'mp3',
+            model: this.settings.model || this.defaultSettings.model,
+            speed: clamp(Number(this.settings.speed) || this.defaultSettings.speed.default, this.defaultSettings.speed.min, this.defaultSettings.speed.max),
+            volume: clamp(Number(this.settings.volume) || this.defaultSettings.volume.default, this.defaultSettings.volume.min, this.defaultSettings.volume.max),
+            pitch: clamp(Math.round(Number(this.settings.pitch)) || this.defaultSettings.pitch.default, this.defaultSettings.pitch.min, this.defaultSettings.pitch.max),
+            audioSampleRate: Number(this.settings.audioSampleRate) || this.defaultSettings.audioSampleRate,
+            bitrate: Number(this.settings.bitrate) || this.defaultSettings.bitrate,
+            format: this.settings.format || this.defaultSettings.format,
             language: language,
         };
 
@@ -809,7 +831,6 @@ class MiniMaxTtsProvider {
             // Backend handles all the complex processing and returns audio data directly
             console.debug('MiniMax TTS: Audio response received from backend');
             return response;
-
         } catch (error) {
             console.error('Error in MiniMax TTS generation:', error);
             throw error;
@@ -926,7 +947,6 @@ class MiniMaxTtsProvider {
                 this.audioElement.onended = null;
                 this.audioElement.onerror = null;
             };
-
         } catch (error) {
             console.error('MiniMax TTS Preview Error:', error);
             toastr.error(`Could not generate preview: ${error.message}`);

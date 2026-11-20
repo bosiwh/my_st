@@ -4,7 +4,7 @@ import yaml from 'yaml';
 import color from 'chalk';
 import _ from 'lodash';
 import { serverDirectory } from './server-directory.js';
-import { keyToEnv, setConfigFilePath } from './util.js';
+import { keyToEnv, setConfigFilePath, stringToBool } from './util.js';
 
 const keyMigrationMap = [
     {
@@ -124,6 +124,16 @@ const keyMigrationMap = [
         migrate: () => void 0,
         remove: true,
     },
+    {
+        oldKey: 'autheliaAuth',
+        newKey: 'sso.autheliaAuth',
+        migrate: (value) => value,
+    },
+    {
+        oldKey: 'authentikAuth',
+        newKey: 'sso.authentikAuth',
+        migrate: (value) => value,
+    },
 ];
 
 /**
@@ -171,7 +181,7 @@ export function addMissingConfigValues(configPath) {
             const newEnvKey = keyToEnv(newKey);
             if (process.env[oldEnvKey] && !process.env[newEnvKey]) {
                 const oldValue = process.env[oldEnvKey];
-                const newValue = migrate(oldValue);
+                const newValue = migrate(stringToBool(oldValue));
                 process.env[newEnvKey] = newValue;
                 delete process.env[oldEnvKey];
                 console.warn(color.yellow(`Warning: Using a deprecated environment variable: ${oldEnvKey}. Please use ${newEnvKey} instead.`));
@@ -228,7 +238,7 @@ export function addMissingConfigValues(configPath) {
 
         fs.writeFileSync(configPath, yaml.stringify(config));
     } catch (error) {
-        console.error(color.red('FATAL: Could not add missing config values to config.yaml'), error);
+        console.warn(color.yellow('Could not add missing config values to config.yaml'), error);
     }
 }
 

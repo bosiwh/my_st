@@ -19,6 +19,20 @@ import { DEFAULT_USER } from '../constants.js';
 
 export const router = express.Router();
 
+/**
+ * Slugifies a given text string.
+ * - Converts to lowercase
+ * - Trims whitespace
+ * - Replaces spaces and special characters with hyphens
+ * - Removes leading and trailing hyphens
+ * - Uses lodash.deburr to remove diacritical marks
+ * @param {string} text Text to slugify
+ * @returns {string} Slugified text
+ */
+function slugify(text) {
+    return lodash.deburr(String(text ?? '').toLowerCase().trim()).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
 router.post('/get', requireAdminMiddleware, async (_request, response) => {
     try {
         /** @type {import('../users.js').User[]} */
@@ -163,7 +177,7 @@ router.post('/create', requireAdminMiddleware, async (request, response) => {
         }
 
         const handles = await getAllUserHandles();
-        const handle = lodash.kebabCase(String(request.body.handle).toLowerCase().trim());
+        const handle = slugify(request.body.handle);
 
         if (!handle) {
             console.warn('Create user failed: Invalid handle');
@@ -204,7 +218,7 @@ router.post('/create', requireAdminMiddleware, async (request, response) => {
 
 router.post('/delete', requireAdminMiddleware, async (request, response) => {
     try {
-        if (!request.body.handle) {
+        if (!request.body.handle || typeof request.body.handle !== 'string') {
             console.warn('Delete user failed: Missing required fields');
             return response.status(400).json({ error: 'Missing required fields' });
         }
@@ -217,6 +231,13 @@ router.post('/delete', requireAdminMiddleware, async (request, response) => {
         if (request.body.handle === DEFAULT_USER.handle) {
             console.warn('Delete user failed: Cannot delete default user');
             return response.status(400).json({ error: 'Sorry, but the default user cannot be deleted. It is required as a fallback.' });
+        }
+
+        const user = await storage.getItem(toKey(request.body.handle));
+
+        if (!user) {
+            console.warn('Delete user failed: User not found');
+            return response.status(404).json({ error: 'User not found' });
         }
 
         await storage.removeItem(toKey(request.body.handle));
@@ -241,7 +262,7 @@ router.post('/slugify', requireAdminMiddleware, async (request, response) => {
             return response.status(400).json({ error: 'Missing required fields' });
         }
 
-        const text = lodash.kebabCase(String(request.body.text).toLowerCase().trim());
+        const text = slugify(request.body.text);
 
         return response.send(text);
     } catch (error) {
